@@ -72,6 +72,13 @@ export function Navbar() {
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
+                href="/catalogo"
+                className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
+              >
+                En Stock
+              </Link>
+              <div className="h-5 w-px bg-white/30" />
+              <Link
                 href="#comunidad"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
@@ -181,10 +188,18 @@ export function Navbar() {
             Cómo funciona
           </Link>
           <Link
-            href="#comunidad"
+            href="/catalogo"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "200ms" : "0ms" }}
+          >
+            En Stock
+          </Link>
+          <Link
+            href="#comunidad"
+            onClick={toggleMenu}
+            className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
+            style={{ transitionDelay: menuOpen ? "250ms" : "0ms" }}
           >
             Comunidad
           </Link>
@@ -192,7 +207,7 @@ export function Navbar() {
             href="#faqs"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
-            style={{ transitionDelay: menuOpen ? "250ms" : "0ms" }}
+            style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
           >
             FAQs
           </Link>
@@ -200,7 +215,7 @@ export function Navbar() {
 
         <div
           className={`px-6 mt-10 transition-all duration-500 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
-          style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
+          style={{ transitionDelay: menuOpen ? "350ms" : "0ms" }}
         >
           <Link
             href="#hace-tu-pedido"
