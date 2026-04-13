@@ -52,24 +52,6 @@ export function ProductoCard({ producto, style }: Props) {
           </span>
         </div>
 
-        {/* Overlay hover — solo desktop */}
-        <div
-          className={cn(
-            "absolute inset-0 z-10 hidden md:flex items-center justify-center",
-            "bg-black/50 backdrop-blur-[2px]",
-            "opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-          )}
-        >
-          <a
-            href={buildWhatsAppUrl(producto.nombre)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="rounded-full bg-[#FF6B35] px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:bg-[#FF6B35]/90 hover:scale-105 active:scale-95"
-          >
-            Consultar
-          </a>
-        </div>
       </div>
 
       {/* Info */}
@@ -84,13 +66,13 @@ export function ProductoCard({ producto, style }: Props) {
           {producto.frase}
         </p>
 
-        {/* Botón consultar mobile — siempre visible */}
+        {/* Botón consultar — siempre visible */}
         <a
           href={buildWhatsAppUrl(producto.nombre)}
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          className="mt-2 block rounded-full border border-white/20 py-2 text-center text-sm text-white/70 transition-colors duration-200 hover:border-[#FF6B35] hover:text-[#FF6B35] md:hidden"
+          className="mt-2 block rounded-full border border-white/20 py-2 text-center text-sm text-white/70 transition-colors duration-200 hover:border-[#FF6B35] hover:text-[#FF6B35]"
         >
           Consultar
         </a>
