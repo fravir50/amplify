@@ -386,7 +386,7 @@ export function HaceTuPedido() {
                 Si necesitás algo urgente, escribinos directo por WhatsApp.
               </p>
               <a
-                href="https://wa.me/5491168370000"
+                href="https://wa.me/5491136228970"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full font-medium text-white bg-[#25D366] hover:bg-[#25D366]/90 transition-all flex items-center gap-2"
@@ -452,7 +452,7 @@ export function HaceTuPedido() {
                   <p className="text-white text-sm">
                     No pudimos enviar tu consulta. Probá de nuevo o escribinos por{" "}
                     <a
-                      href="https://wa.me/5491168370000"
+                      href="https://wa.me/5491136228970"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[#FF6B35] hover:underline"
