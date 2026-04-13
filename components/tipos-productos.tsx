@@ -1,8 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, Package, Clock } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { AnimateOnScroll } from "./animate-on-scroll"
 
 const products = [
@@ -92,7 +93,7 @@ export function TiposProductos() {
             Tipos de productos
           </h2>
           <p className="text-gray-200 text-base sm:text-lg mb-8 sm:mb-12 max-w-3xl mx-auto">
-            Una muestra de algunos de los equipos que podemos acercarte.
+            Los tenemos en stock o los traemos a pedido. Vos elegís.
           </p>
         </AnimateOnScroll>
 
@@ -129,8 +130,9 @@ export function TiposProductos() {
           </div>
         </AnimateOnScroll>
 
+        {/* Carousel navigation */}
         <AnimateOnScroll delay={300}>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 mb-14 sm:mb-16">
             <button
               onClick={prevSlide}
               className="w-12 h-12 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
@@ -159,6 +161,49 @@ export function TiposProductos() {
             >
               <ChevronRight className="w-6 h-6 text-[#ff6b35]" />
             </button>
+          </div>
+        </AnimateOnScroll>
+
+        {/* Dual-path CTAs */}
+        <AnimateOnScroll delay={400}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+            {/* En Stock */}
+            <div className="flex flex-col gap-4 rounded-2xl border border-white/5 bg-[#0f0f0f] p-6 sm:p-8">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#C9A96E]/30 bg-[#C9A96E]/10">
+                  <Clock className="h-5 w-5 text-[#C9A96E]" />
+                </div>
+                <h3 className="text-base font-semibold text-white">Tenemos en stock</h3>
+              </div>
+              <p className="text-sm leading-relaxed text-white/50">
+                Entrega inmediata en CABA. Productos seleccionados y disponibles ahora.
+              </p>
+              <Link
+                href="/catalogo"
+                className="mt-auto inline-flex items-center gap-1.5 rounded-full border border-[#C9A96E]/40 px-5 py-2 text-sm font-medium text-[#C9A96E] transition-all duration-200 hover:bg-[#C9A96E]/10 hover:border-[#C9A96E] w-fit"
+              >
+                Ver catálogo
+              </Link>
+            </div>
+
+            {/* A pedido */}
+            <div className="flex flex-col gap-4 rounded-2xl border border-[#FF6B35]/10 bg-[#0f0f0f] p-6 sm:p-8">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#FF6B35]/30 bg-[#FF6B35]/10">
+                  <Package className="h-5 w-5 text-[#FF6B35]" />
+                </div>
+                <h3 className="text-base font-semibold text-white">Lo traemos a pedido</h3>
+              </div>
+              <p className="text-sm leading-relaxed text-white/50">
+                ¿No está en el catálogo? Consultanos y lo conseguimos. Acceso a cualquier equipo del mundo.
+              </p>
+              <Link
+                href="#hace-tu-pedido"
+                className="mt-auto inline-flex items-center gap-1.5 rounded-full bg-[#FF6B35] px-5 py-2 text-sm font-medium text-white transition-all duration-200 hover:bg-[#FF6B35]/90 hover:scale-[1.02] w-fit"
+              >
+                Hacer un pedido
+              </Link>
+            </div>
           </div>
         </AnimateOnScroll>
       </div>
