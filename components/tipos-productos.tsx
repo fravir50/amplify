@@ -112,7 +112,7 @@ export function TiposProductos() {
               </p>
               <Link
                 href="/catalogo"
-                className="mt-auto inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 hover:scale-[1.02] w-fit"
+                className="mt-auto inline-flex items-center gap-1.5 rounded-full bg-[#C9A96E] px-5 py-2 text-sm font-medium text-black transition-all duration-200 hover:bg-[#C9A96E]/90 hover:scale-[1.02] w-fit"
               >
                 Ver catálogo
               </Link>
