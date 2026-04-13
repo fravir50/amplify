@@ -5,10 +5,13 @@ import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { usePathname, useRouter } from "next/navigation"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +24,13 @@ export function Navbar() {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev)
 
-  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
+      router.push("/")
+    }
   }
 
   return (
@@ -42,7 +49,7 @@ export function Navbar() {
             {/* Logo izquierda */}
             <Link
               href="/"
-              onClick={scrollToTop}
+              onClick={handleLogoClick}
               className="flex items-center transition-transform duration-300 hover:scale-105 flex-shrink-0"
             >
               <Image
@@ -75,7 +82,7 @@ export function Navbar() {
                 href="/catalogo"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
-                En Stock
+                Catálogo
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
@@ -106,7 +113,7 @@ export function Navbar() {
             {/* Espaciador izquierdo para centrar logo */}
             <div className="w-10 flex-shrink-0" />
 
-            <Link href="/" onClick={scrollToTop} className="flex-1 flex items-center justify-center h-full">
+            <Link href="/" onClick={handleLogoClick} className="flex-1 flex items-center justify-center h-full">
               <Image
                 src="/images/logo-amplify-vector.png"
                 alt="Amplify - Audio Hi-Fi y Hi-End en Argentina"
@@ -146,7 +153,7 @@ export function Navbar() {
           <Link
             href="/"
             onClick={(e) => {
-              scrollToTop(e)
+              handleLogoClick(e)
               toggleMenu()
             }}
           >
@@ -193,7 +200,7 @@ export function Navbar() {
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "200ms" : "0ms" }}
           >
-            En Stock
+            Catálogo
           </Link>
           <Link
             href="#comunidad"

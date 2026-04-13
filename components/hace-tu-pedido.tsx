@@ -366,8 +366,8 @@ export function HaceTuPedido() {
             Hacé tu pedido
           </h2>
           <p className="text-gray-200 mb-12" style={{ fontSize: "clamp(1rem, 2.2vw, 1.125rem)" }}>
-            Tu experiencia con nosotros empieza acá. Consultanos por cualquier equipo que te interese y te acompañamos
-            en cada paso del proceso.
+            ¿Tenés un equipo en mente que no encontrás en nuestro catálogo? Lo traemos. Completá el formulario y te
+            acompañamos en cada paso.
           </p>
         </AnimateOnScroll>
 
