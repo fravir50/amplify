@@ -65,14 +65,14 @@ export function Navbar() {
             {/* Links centro */}
             <div className="flex items-center gap-0.5 lg:gap-1">
               <Link
-                href="#quienes-somos"
+                href="/#quienes-somos"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 Quiénes somos
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
-                href="#como-funciona"
+                href="/#como-funciona"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 Cómo funciona
@@ -86,14 +86,14 @@ export function Navbar() {
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
-                href="#comunidad"
+                href="/#comunidad"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 Comunidad
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
-                href="#faqs"
+                href="/#faqs"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 FAQs
@@ -101,7 +101,7 @@ export function Navbar() {
             </div>
 
             <Link
-              href="#hace-tu-pedido"
+              href="/#hace-tu-pedido"
               className="rounded-full px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-white bg-[#FF6B35] transition-all duration-300 hover:bg-[#FF6B35]/90 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,107,53,0.4)] active:scale-95 flex-shrink-0 -mr-4"
             >
               Hacé tu pedido
@@ -179,7 +179,7 @@ export function Navbar() {
         {/* Links con animación escalonada */}
         <nav className="mt-10 px-6 space-y-2">
           <Link
-            href="#quienes-somos"
+            href="/#quienes-somos"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "100ms" : "0ms" }}
@@ -187,7 +187,7 @@ export function Navbar() {
             Quiénes somos
           </Link>
           <Link
-            href="#como-funciona"
+            href="/#como-funciona"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "150ms" : "0ms" }}
@@ -203,7 +203,7 @@ export function Navbar() {
             Catálogo
           </Link>
           <Link
-            href="#comunidad"
+            href="/#comunidad"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "250ms" : "0ms" }}
@@ -211,7 +211,7 @@ export function Navbar() {
             Comunidad
           </Link>
           <Link
-            href="#faqs"
+            href="/#faqs"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
@@ -225,7 +225,7 @@ export function Navbar() {
           style={{ transitionDelay: menuOpen ? "350ms" : "0ms" }}
         >
           <Link
-            href="#hace-tu-pedido"
+            href="/#hace-tu-pedido"
             onClick={toggleMenu}
             className="block w-full text-center rounded-full py-4 min-h-[48px] text-base font-medium text-white bg-[#FF6B35] transition-all duration-300 hover:bg-[#FF6B35]/90 active:scale-95 focus:outline-none"
           >

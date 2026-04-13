@@ -112,7 +112,7 @@ export function TiposProductos() {
               </p>
               <Link
                 href="/catalogo"
-                className="mt-auto inline-flex items-center gap-1.5 rounded-full border border-[#C9A96E]/40 px-5 py-2 text-sm font-medium text-[#C9A96E] transition-all duration-200 hover:bg-[#C9A96E]/10 hover:border-[#C9A96E] w-fit"
+                className="mt-auto inline-flex items-center gap-1.5 rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 hover:scale-[1.02] w-fit"
               >
                 Ver catálogo
               </Link>
@@ -147,8 +147,9 @@ export function TiposProductos() {
             } gap-3 sm:gap-4 mb-6`}
           >
             {visibleProducts.map((product, idx) => (
-              <div
+              <Link
                 key={`${product.id}-${currentIndex}-${idx}`}
+                href={`/catalogo?categoria=${encodeURIComponent(product.title)}`}
                 className={`group cursor-pointer hover-lift ${isMobile ? "w-full max-w-xs" : ""}`}
               >
                 <div className="overflow-hidden rounded-xl sm:rounded-2xl mb-2 sm:mb-3 relative aspect-[4/3]">
@@ -168,7 +169,7 @@ export function TiposProductos() {
                   <h3 className="text-white text-base sm:text-lg font-normal mb-0.5">{product.title}</h3>
                   <p className="text-gray-400 text-xs sm:text-sm">{product.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </AnimateOnScroll>

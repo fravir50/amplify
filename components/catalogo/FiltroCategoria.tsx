@@ -9,6 +9,7 @@ export const CATEGORIAS = [
   "Streamers",
   "Parlantes",
   "Auriculares",
+  "Tocadiscos",
   "Accesorios",
 ] as const
 
