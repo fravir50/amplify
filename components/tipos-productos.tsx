@@ -87,86 +87,18 @@ export function TiposProductos() {
 
   return (
     <section id="tipos-productos" className="py-12 sm:py-16 lg:py-20">
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        {/* Título */}
         <AnimateOnScroll>
-          <h2 className="text-[clamp(28px,6vw,48px)] lg:text-5xl font-normal text-white mb-3 sm:mb-4">
+          <h2 className="text-[clamp(28px,6vw,48px)] lg:text-5xl font-normal text-white mb-8 sm:mb-10 text-center">
             Tipos de productos
           </h2>
-          <p className="text-gray-200 text-base sm:text-lg mb-8 sm:mb-12 max-w-3xl mx-auto">
-            Los tenemos en stock o los traemos a pedido. Vos elegís.
-          </p>
         </AnimateOnScroll>
 
-        <AnimateOnScroll delay={200}>
-          <div
-            className={`${
-              isMobile ? "flex justify-center" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-            } gap-4 sm:gap-6 mb-8 sm:mb-12`}
-          >
-            {visibleProducts.map((product, idx) => (
-              <div
-                key={`${product.id}-${currentIndex}-${idx}`}
-                className={`group cursor-pointer hover-lift ${isMobile ? "w-full max-w-sm" : ""}`}
-              >
-                <div className="overflow-hidden rounded-2xl sm:rounded-3xl mb-3 sm:mb-4 relative aspect-square">
-                  <Image
-                    src={product.image || "/placeholder.svg"}
-                    alt={`${product.title} - ${product.description}`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-background text-background"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    quality={80}
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-gray-700/12 to-[#ff6b35]/10 pointer-events-none" />
-                  <div className="absolute inset-0 border border-white/5 rounded-2xl sm:rounded-3xl pointer-events-none" />
-                </div>
-                <div className="bg-[#1a1a1a] rounded-2xl sm:rounded-3xl p-4 sm:p-6 min-h-[140px] sm:min-h-[160px] flex flex-col justify-center transition-colors duration-300 group-hover:bg-[#222]">
-                  <h3 className="text-white text-xl sm:text-2xl font-normal mb-1 sm:mb-2">{product.title}</h3>
-                  <p className="text-gray-400 text-sm sm:text-base">{product.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </AnimateOnScroll>
-
-        {/* Carousel navigation */}
-        <AnimateOnScroll delay={300}>
-          <div className="flex items-center justify-center gap-4 mb-14 sm:mb-16">
-            <button
-              onClick={prevSlide}
-              className="w-12 h-12 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
-              aria-label="Producto anterior"
-            >
-              <ChevronLeft className="w-6 h-6 text-[#ff6b35]" />
-            </button>
-
-            <div className="flex gap-2 bg-[#2a2a2a] px-4 py-2 rounded-full">
-              {products.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 focus:outline-none ${
-                    index === currentIndex ? "bg-[#ff6b35] scale-125" : "bg-gray-600 hover:bg-gray-500"
-                  }`}
-                  aria-label={`Ir al producto ${index + 1}: ${products[index].title}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={nextSlide}
-              className="w-12 h-12 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
-              aria-label="Producto siguiente"
-            >
-              <ChevronRight className="w-6 h-6 text-[#ff6b35]" />
-            </button>
-          </div>
-        </AnimateOnScroll>
-
-        {/* Dual-path CTAs */}
-        <AnimateOnScroll delay={400}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+        {/* Dual-path CTAs — arriba del carousel */}
+        <AnimateOnScroll delay={100}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left mb-12 sm:mb-14">
             {/* En Stock */}
             <div className="flex flex-col gap-4 rounded-2xl border border-white/5 bg-[#0f0f0f] p-6 sm:p-8">
               <div className="flex items-center gap-3">
@@ -206,6 +138,75 @@ export function TiposProductos() {
             </div>
           </div>
         </AnimateOnScroll>
+
+        {/* Carousel — más chico */}
+        <AnimateOnScroll delay={200}>
+          <div
+            className={`${
+              isMobile ? "flex justify-center" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            } gap-3 sm:gap-4 mb-6`}
+          >
+            {visibleProducts.map((product, idx) => (
+              <div
+                key={`${product.id}-${currentIndex}-${idx}`}
+                className={`group cursor-pointer hover-lift ${isMobile ? "w-full max-w-xs" : ""}`}
+              >
+                <div className="overflow-hidden rounded-xl sm:rounded-2xl mb-2 sm:mb-3 relative aspect-[4/3]">
+                  <Image
+                    src={product.image || "/placeholder.svg"}
+                    alt={`${product.title} - ${product.description}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110 bg-background text-background"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={80}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800/20 via-gray-700/12 to-[#ff6b35]/10 pointer-events-none" />
+                  <div className="absolute inset-0 border border-white/5 rounded-xl sm:rounded-2xl pointer-events-none" />
+                </div>
+                <div className="bg-[#1a1a1a] rounded-xl sm:rounded-2xl px-4 py-3 sm:px-5 sm:py-4 flex flex-col justify-center transition-colors duration-300 group-hover:bg-[#222]">
+                  <h3 className="text-white text-base sm:text-lg font-normal mb-0.5">{product.title}</h3>
+                  <p className="text-gray-400 text-xs sm:text-sm">{product.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </AnimateOnScroll>
+
+        {/* Carousel navigation */}
+        <AnimateOnScroll delay={300}>
+          <div className="flex items-center justify-center gap-4">
+            <button
+              onClick={prevSlide}
+              className="w-10 h-10 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
+              aria-label="Producto anterior"
+            >
+              <ChevronLeft className="w-5 h-5 text-[#ff6b35]" />
+            </button>
+
+            <div className="flex gap-2 bg-[#2a2a2a] px-3 py-1.5 rounded-full">
+              {products.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${
+                    index === currentIndex ? "bg-[#ff6b35] scale-125" : "bg-gray-600 hover:bg-gray-500"
+                  }`}
+                  aria-label={`Ir al producto ${index + 1}: ${products[index].title}`}
+                />
+              ))}
+            </div>
+
+            <button
+              onClick={nextSlide}
+              className="w-10 h-10 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
+              aria-label="Producto siguiente"
+            >
+              <ChevronRight className="w-5 h-5 text-[#ff6b35]" />
+            </button>
+          </div>
+        </AnimateOnScroll>
+
       </div>
     </section>
   )

@@ -22,7 +22,7 @@ export interface Producto {
   badge: string
 }
 
-export const WHATSAPP_NUMBER = "5491100000000"
+export const WHATSAPP_NUMBER = "5491136228970"
 
 export const productos: Producto[] = [
   {
