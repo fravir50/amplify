@@ -100,12 +100,14 @@ export function Navbar() {
               </Link>
             </div>
 
-            <Link
-              href="/#hace-tu-pedido"
+            <a
+              href="https://wa.me/5491136228970?text=Hola%2C%20estoy%20interesado%20en%20hacer%20un%20pedido%20o%20adquirir%20un%20producto%20del%20cat%C3%A1logo%20de%20Amplify.%20%C2%BFMe%20pueden%20ayudar%3F"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-white bg-[#FF6B35] transition-all duration-300 hover:bg-[#FF6B35]/90 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,107,53,0.4)] active:scale-95 flex-shrink-0 -mr-4"
             >
               Hacé tu pedido
-            </Link>
+            </a>
           </div>
 
           {/* MOBILE NAVBAR */}
@@ -224,13 +226,15 @@ export function Navbar() {
           className={`px-6 mt-10 transition-all duration-500 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
           style={{ transitionDelay: menuOpen ? "350ms" : "0ms" }}
         >
-          <Link
-            href="/#hace-tu-pedido"
+          <a
+            href="https://wa.me/5491136228970?text=Hola%2C%20estoy%20interesado%20en%20hacer%20un%20pedido%20o%20adquirir%20un%20producto%20del%20cat%C3%A1logo%20de%20Amplify.%20%C2%BFMe%20pueden%20ayudar%3F"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={toggleMenu}
             className="block w-full text-center rounded-full py-4 min-h-[48px] text-base font-medium text-white bg-[#FF6B35] transition-all duration-300 hover:bg-[#FF6B35]/90 active:scale-95 focus:outline-none"
           >
             Hacé tu pedido
-          </Link>
+          </a>
         </div>
       </div>
     </>

@@ -108,12 +108,14 @@ function CatalogoContent() {
               </p>
             </div>
           </div>
-          <Link
-            href="/#hace-tu-pedido"
+          <a
+            href="https://wa.me/5491136228970?text=Hola%2C%20estoy%20interesado%20en%20hacer%20un%20pedido%20o%20adquirir%20un%20producto%20del%20cat%C3%A1logo%20de%20Amplify.%20%C2%BFMe%20pueden%20ayudar%3F"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex-shrink-0 rounded-full bg-[#FF6B35] px-6 py-2.5 text-sm font-medium text-white transition-all duration-200 hover:bg-[#FF6B35]/90 hover:scale-[1.02] text-center sm:text-left"
           >
-            Hacer un pedido
-          </Link>
+            Hacé tu pedido
+          </a>
         </div>
       </div>
     </div>
