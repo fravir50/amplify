@@ -50,7 +50,7 @@ const faqData: FAQCategory[] = [
       {
         question: "¿Tienen catálogo propio?",
         answer:
-          "Estamos trabajando en construir un stock para poder ofrecer aún mejores precios, mayor disponibilidad y entrega inmediata.",
+          "Sí. Tenemos un catálogo variado, disponible para entrega inmediata, que garantiza los mejores precios posibles.",
       },
       {
         question: "¿Puedo pedir un modelo exclusivo o recién lanzado?",
