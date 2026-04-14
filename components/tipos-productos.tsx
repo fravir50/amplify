@@ -34,12 +34,9 @@ export function TiposProductos() {
 
         {/* Título */}
         <AnimateOnScroll>
-          <h2 className="text-[clamp(28px,6vw,48px)] font-normal text-white mb-3 text-center">
-            Algunos de nuestros productos
+          <h2 className="text-[clamp(28px,6vw,48px)] font-normal text-white mb-10 sm:mb-14 text-center">
+            Conocé nuestro catálogo
           </h2>
-          <p className="text-center text-white/40 text-sm mb-10 sm:mb-14">
-            Una muestra del catálogo disponible para entrega inmediata en CABA.
-          </p>
         </AnimateOnScroll>
 
         {/* Carousel */}
@@ -102,7 +99,7 @@ export function TiposProductos() {
               className="w-10 h-10 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
               aria-label="Producto anterior"
             >
-              <ChevronLeft className="w-5 h-5 text-[#ff6b35]" />
+              <ChevronLeft className="w-5 h-5 text-[#C9A96E]" />
             </button>
 
             <div className="flex gap-2 bg-[#2a2a2a] px-3 py-1.5 rounded-full">
@@ -111,7 +108,7 @@ export function TiposProductos() {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${
-                    index === currentIndex ? "bg-[#ff6b35] scale-125" : "bg-gray-600 hover:bg-gray-500"
+                    index === currentIndex ? "bg-[#C9A96E] scale-125" : "bg-gray-600 hover:bg-gray-500"
                   }`}
                   aria-label={`Ir al producto ${index + 1}`}
                 />
@@ -123,7 +120,7 @@ export function TiposProductos() {
               className="w-10 h-10 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
               aria-label="Producto siguiente"
             >
-              <ChevronRight className="w-5 h-5 text-[#ff6b35]" />
+              <ChevronRight className="w-5 h-5 text-[#C9A96E]" />
             </button>
           </div>
         </AnimateOnScroll>
