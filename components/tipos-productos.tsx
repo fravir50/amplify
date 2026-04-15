@@ -83,7 +83,10 @@ export function TiposProductos() {
                   <p className="text-[11px] font-medium uppercase tracking-widest text-white/40 mb-1">
                     {producto.marca}
                   </p>
-                  <h3 className="text-white text-lg font-normal mb-1">{producto.nombre}</h3>
+                  <div className="flex items-baseline justify-between gap-2 mb-1">
+                    <h3 className="text-white text-lg font-normal">{producto.nombre}</h3>
+                    <span className="flex-shrink-0 text-lg font-semibold text-[#C9A96E]">{producto.precio}</span>
+                  </div>
                   <p className="text-gray-400 text-sm line-clamp-2">{producto.frase}</p>
                 </div>
               </Link>
