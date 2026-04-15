@@ -242,6 +242,142 @@ export const productos: Producto[] = [
     badge: "Entrega inmediata",
   },
 
+  // ── PARLANTES ────────────────────────────────────────────────
+  {
+    id: "kanto-yu6mb",
+    nombre: "YU6",
+    marca: "Kanto",
+    categoria: "Parlantes",
+    precio: "USD 450",
+    frase: "Parlantes activos con Bluetooth, fono integrado y 200W de potencia total.",
+    imagen: "/images/products/parlantes-kanto-yu6mb.jpg",
+    descripcion:
+      "Los Kanto YU6 son parlantes activos de dos vías que no necesitan amplificador externo. Con 200W totales biamplificados, Bluetooth 5.0 con aptX, preamplificador phono integrado para tocadiscos y múltiples entradas digitales y analógicas, son la solución todo-en-uno más completa del mercado para uso en escritorio o living.",
+    idealPara: [
+      "Setup sin amplificador: conectás directamente el streamer o el tocadiscos",
+      "Escritorios donde el espacio y la simplicidad son clave",
+      "Usuarios que quieren Bluetooth de alta calidad sin sacrificar sonido Hi-Fi",
+    ],
+    specs: {
+      Tipo: "Activos biamplificados, 2 vías",
+      Potencia: "200W total (100W woofer + 100W tweeter por par)",
+      Drivers: "5.25\" woofer + 1\" tweeter silk dome",
+      Conectividad: "Bluetooth 5.0 aptX",
+      Entradas: "2× Óptica, 2× RCA, USB-C, 3.5mm AUX, Phono MM",
+      Salidas: "Subwoofer RCA, auriculares 3.5mm",
+    },
+    encajaCon: ["wiim-pro-plus", "wiim-ultra", "music-hall-mmf-1-3"],
+    badge: "Entrega inmediata",
+  },
+  {
+    id: "elac-debut-3-0",
+    nombre: "Debut 3.0",
+    marca: "ELAC",
+    categoria: "Parlantes",
+    precio: "USD 350",
+    frase: "Parlantes pasivos de estante diseñados por Andrew Jones, referencia en su rango de precio.",
+    imagen: "/images/products/parlantes-elac-debut-3-0.jpg",
+    descripcion:
+      "Los ELAC Debut 3.0 son la última evolución de la serie que revolucionó el segmento de entrada Hi-Fi. Diseñados por Andrew Jones, exingeniero de TAD y Pioneer, combinan un woofer de fibra de aramida con un tweeter de seda para lograr un sonido coherente, detallado y sin fatiga auditiva. Requieren amplificador externo.",
+    idealPara: [
+      "Primer par de parlantes pasivos de calidad Hi-Fi",
+      "Setup de living o escritorio con amplificador integrado",
+      "Usuarios que buscan el mejor sonido en su rango de precio",
+    ],
+    specs: {
+      Tipo: "Pasivos, 2 vías, estante",
+      Drivers: "5.25\" woofer aramida + 1\" tweeter silk dome",
+      "Respuesta en frecuencia": "46Hz – 35kHz",
+      Sensibilidad: "87dB (2.83V/1m)",
+      Impedancia: "6 Ohm nominal",
+      Dimensiones: "175 × 290 × 245mm",
+    },
+    encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
+    badge: "Entrega inmediata",
+  },
+
+  // ── AMPLIFICADORES (nuevos) ───────────────────────────────────
+  {
+    id: "cambridge-audio-axa35",
+    nombre: "AXA35",
+    marca: "Cambridge Audio",
+    categoria: "Amplificadores",
+    precio: "USD 350",
+    frase: "Amplificador integrado puro con entrada phono MM y 35W por canal.",
+    imagen: "/images/products/amplificador-cambridge-audio-axa35.jpg",
+    descripcion:
+      "El Cambridge Audio AXA35 es un amplificador integrado de clase AB que sigue la filosofía de la marca: circuitos simples y componentes de calidad para lograr el sonido más honesto posible. Sus 35W por canal son más que suficientes para parlantes de estante en salas medianas, y la entrada phono MM integrada lo hace ideal para tocadiscos sin preamplificador externo.",
+    idealPara: [
+      "Primer amplificador integrado de calidad Hi-Fi",
+      "Setup con parlantes pasivos de estante y tocadiscos",
+      "Usuarios que priorizan pureza de señal sobre conectividad digital",
+    ],
+    specs: {
+      Potencia: "2×35W @8Ω",
+      Entradas: "4× RCA línea, 1× Phono MM, 1× AUX 3.5mm",
+      "Salida auriculares": "3.5mm frontal",
+      "Respuesta en frecuencia": "15Hz – 40kHz",
+      THD: "<0.003% (1kHz, 10W)",
+      Dimensiones: "430 × 75 × 290mm",
+    },
+    encajaCon: ["elac-debut-3-0", "fluance-rt85", "pro-ject-debut-evo-2"],
+    badge: "Entrega inmediata",
+  },
+
+  // ── TOCADISCOS (nuevos) ───────────────────────────────────────
+  {
+    id: "fluance-rt85",
+    nombre: "RT85",
+    marca: "Fluance",
+    categoria: "Tocadiscos",
+    precio: "USD 499",
+    frase: "Tocadiscos de referencia con cápsula Ortofon 2M Blue y plato acrílico.",
+    imagen: "/images/products/tocadiscos-fluance-rt85.jpg",
+    descripcion:
+      "El Fluance RT85 es el tocadiscos de referencia de entrada a medio rango. Incluye la cápsula Ortofon 2M Blue, una de las más respetadas en la comunidad audiófila, montada sobre un brazo de aluminio con contrapeso ajustable. El plato de acrílico reduce las resonancias del motor y eleva notablemente la resolución del sonido. Requiere preamplificador phono externo o amplificador con entrada phono.",
+    idealPara: [
+      "Amantes del vinilo que quieren dar el salto a una cápsula de referencia",
+      "Setup con amplificador que tenga entrada phono MM",
+      "Usuarios que buscan máximo detalle y escena sonora en vinilos",
+    ],
+    specs: {
+      Accionamiento: "Correa (belt drive)",
+      Brazo: "Aluminio en S, contrapeso ajustable",
+      Cápsula: "Ortofon 2M Blue (incluida)",
+      Plato: "Acrílico con alfombrilla antivibración",
+      Velocidades: "33 / 45 RPM",
+      "Preamplificador phono": "No incluido (requiere externo o entrada phono en el amp)",
+    },
+    encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
+    badge: "Entrega inmediata",
+  },
+  {
+    id: "pro-ject-debut-evo-2",
+    nombre: "Debut EVO 2",
+    marca: "Pro-Ject",
+    categoria: "Tocadiscos",
+    precio: "USD 549",
+    frase: "El tocadiscos europeo de referencia, rediseñado con brazo de aluminio de 8.6\".",
+    imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2.jpg",
+    descripcion:
+      "El Pro-Ject Debut EVO 2 es la última versión del tocadiscos más vendido de la historia de la marca austriaca. Construido con un chasis MDF con aislamiento vibracional mejorado, brazo de aluminio de 8.6\" y control electrónico de velocidades, combina precisión de ingeniería europea con facilidad de uso. Incluye cápsula Ortofon OM10 y requiere preamplificador phono externo.",
+    idealPara: [
+      "Usuarios que quieren lo mejor del vinilo europeo en su rango de precio",
+      "Setup con amplificador integrado con entrada phono",
+      "Audiófilos que priorizan materiales y construcción de calidad",
+    ],
+    specs: {
+      Accionamiento: "Correa (belt drive)",
+      Brazo: "Aluminio 8.6\", antiskating y contrapeso ajustable",
+      Cápsula: "Ortofon OM10 (incluida)",
+      Plato: "MDF con alfombrilla de goma",
+      Velocidades: "33 / 45 / 78 RPM (electrónico)",
+      "Preamplificador phono": "No incluido",
+    },
+    encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
+    badge: "Entrega inmediata",
+  },
+
   // ── COMBOS ───────────────────────────────────────────────────
   {
     id: "combo-wiim-amp-ultra-mmf-1-3",
