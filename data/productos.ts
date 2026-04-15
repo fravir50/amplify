@@ -13,6 +13,7 @@ export interface Producto {
   nombre: string
   marca: string
   categoria: "Amplificadores" | "DACs" | "Streamers" | "Parlantes" | "Auriculares" | "Accesorios"
+  precio: string
   frase: string
   imagen: string
   descripcion: string
@@ -30,6 +31,7 @@ export const productos: Producto[] = [
     nombre: "WiiM Ultra",
     marca: "WiiM",
     categoria: "Streamers",
+    precio: "$850.000",
     frase: "Streamer todo-en-uno con DAC integrado y control de sala.",
     imagen: "/images/products/streamer-wiim.jpg",
     descripcion:
@@ -55,6 +57,7 @@ export const productos: Producto[] = [
     nombre: "Q150",
     marca: "KEF",
     categoria: "Parlantes",
+    precio: "$420.000",
     frase: "Parlante bookshelf con tweeter concéntrico Uni-Q para una imagen sonora excepcional.",
     imagen: "/images/products/parlantes-kef.jpg",
     descripcion:
@@ -81,6 +84,7 @@ export const productos: Producto[] = [
     nombre: "Zen DAC 3",
     marca: "iFi Audio",
     categoria: "DACs",
+    precio: "$280.000",
     frase: "DAC/amplificador de auriculares con salida balanceada y soporte nativo para MQA.",
     imagen: "/images/products/dac-ifi.jpg",
     descripcion:
@@ -106,6 +110,7 @@ export const productos: Producto[] = [
     nombre: "Celestee",
     marca: "Focal",
     categoria: "Auriculares",
+    precio: "$1.950.000",
     frase: "Auricular circumaural cerrado de referencia, fabricado en Francia.",
     imagen: "/images/products/auriculares-focal.jpg",
     descripcion:

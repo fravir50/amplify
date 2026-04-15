@@ -100,7 +100,7 @@ export default async function ProductoDetallePage({ params }: Props) {
 
             {/* Qué es */}
             <section>
-              <h2 className="mb-4 text-lg font-semibold text-white">Qué es</h2>
+              <h2 className="mb-4 text-lg font-semibold text-white">Descripción</h2>
               <p className="text-base leading-relaxed text-white/60">{producto.descripcion}</p>
             </section>
 
@@ -119,7 +119,7 @@ export default async function ProductoDetallePage({ params }: Props) {
 
             {/* Aspectos técnicos */}
             <section>
-              <h2 className="mb-4 text-lg font-semibold text-white">Aspectos técnicos</h2>
+              <h2 className="mb-4 text-lg font-semibold text-white">Especificaciones técnicas</h2>
               <dl className="space-y-3">
                 {Object.entries(producto.specs).map(([key, value]) => (
                   <div
@@ -136,7 +136,7 @@ export default async function ProductoDetallePage({ params }: Props) {
             {/* Encaja bien con */}
             {relacionados.length > 0 && (
               <section>
-                <h2 className="mb-6 text-lg font-semibold text-white">Encaja bien con</h2>
+                <h2 className="mb-6 text-lg font-semibold text-white">Se puede combinar con</h2>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {relacionados.map((rel) => (
                     <ProductoCard key={rel.id} producto={rel} />
