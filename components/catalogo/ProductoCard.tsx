@@ -52,6 +52,15 @@ export function ProductoCard({ producto, style }: Props) {
           </span>
         </div>
 
+        {/* Combo ribbon */}
+        {producto.categoria === "Combos" && (
+          <div className="absolute right-0 top-0 z-10 overflow-hidden w-16 h-16">
+            <div className="absolute right-[-20px] top-[10px] w-[80px] rotate-45 bg-[#C9A96E] py-1 text-center text-[10px] font-semibold uppercase tracking-wider text-black">
+              Combo
+            </div>
+          </div>
+        )}
+
       </div>
 
       {/* Info */}

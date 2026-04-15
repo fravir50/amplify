@@ -4,13 +4,13 @@ import { cn } from "@/lib/utils"
 
 export const CATEGORIAS = [
   "Todos",
+  "Combos",
   "Amplificadores",
   "DACs",
   "Streamers",
   "Parlantes",
   "Auriculares",
   "Tocadiscos",
-  "Combos",
   "Accesorios",
 ] as const
 

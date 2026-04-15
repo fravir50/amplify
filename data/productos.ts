@@ -87,7 +87,7 @@ export const productos: Producto[] = [
     categoria: "DACs",
     precio: "USD 270",
     frase: "DAC/amplificador portátil con salida balanceada y soporte para alta resolución.",
-    imagen: "/images/products/dac-ifi-hip-dac3.jpg",
+    imagen: "/images/products/dac-ifi-hip-dac3.png",
     descripcion:
       "El iFi Hip-Dac 3 es un DAC/amplificador de auriculares diseñado para usar con el celular o la computadora. Compacto pero potente: incluye salida balanceada de 4.4mm, soporte para DSD256 y MQA, y batería interna para uso portátil. La forma más efectiva de mejorar drásticamente el sonido de tus auriculares.",
     idealPara: [
@@ -222,7 +222,7 @@ export const productos: Producto[] = [
     categoria: "Tocadiscos",
     precio: "USD 699",
     frase: "Tocadiscos de entrada con preamplificador phono integrado y cápsula incluida.",
-    imagen: "/images/products/tocadiscos-music-hall-mmf-1-3.jpg",
+    imagen: "/images/products/tocadiscos-music-hall-mmf-1-3.png",
     descripcion:
       "El Music Hall MMF-1.3 es un tocadiscos de entrada diseñado para sonar bien desde el primer día. Incluye preamplificador phono incorporado, cápsula Audio-Technica AT3600L y plato MDF con alfombrilla. Todo lo necesario para escuchar vinilos con buena calidad sin complicaciones.",
     idealPara: [
@@ -250,7 +250,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 1.349",
     frase: "Sistema completo: streaming, amplificación y vinilo en un solo combo.",
-    imagen: "/images/products/combo-wiim-amp-ultra-mmf-1-3.jpg",
+    imagen: "/images/products/amplificador-wiim-amp-ultra.jpg",
     descripcion:
       "El combo ideal para quien quiere un sistema Hi-Fi completo desde el día uno. El WiiM Amp Ultra maneja el streaming y la amplificación con Dirac Live, mientras el Music Hall MMF-1.3 se encarga del vinilo. Solo necesitás agregar parlantes pasivos.",
     idealPara: [
@@ -275,7 +275,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 1.369",
     frase: "Amplificación japonesa de calidad y vinilo analógico en un combo.",
-    imagen: "/images/products/combo-denon-pma-600ne-mmf-1-3.jpg",
+    imagen: "/images/products/amplificador-denon-pma-600ne.jpg",
     descripcion:
       "El Denon PMA-600NE y el Music Hall MMF-1.3 forman un sistema analógico de referencia a precio accesible. El Denon aporta su característica calidez japonesa y 70W por canal, mientras el Music Hall se encarga de leer vinilos con precisión. Un setup clásico y confiable.",
     idealPara: [
@@ -299,7 +299,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 619",
     frase: "El setup de auriculares más equilibrado para escucha crítica.",
-    imagen: "/images/products/combo-hd650-hip-dac3.jpg",
+    imagen: "/images/products/auriculares-sennheiser-hd650.jpg",
     descripcion:
       "El Sennheiser HD 650 y el iFi Hip-Dac 3 son una combinación probada en la comunidad audiófila. El Hip-Dac 3 provee la potencia y la fuente limpia que los 300 Ohm del HD 650 necesitan, mientras el auricular entrega su sonido cálido y detallado sin limitaciones.",
     idealPara: [
@@ -323,7 +323,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 529",
     frase: "Neutralidad de referencia con la fuente perfecta para auriculares de alta impedancia.",
-    imagen: "/images/products/combo-hd600-hip-dac3.jpg",
+    imagen: "/images/products/auriculares-sennheiser-hd600.jpg",
     descripcion:
       "El HD 600 es conocido por su respuesta lineal y su capacidad de revelar todo lo que está en la grabación. El iFi Hip-Dac 3 provee la corriente necesaria para manejar sus 300 Ohm con comodidad, y agrega resolución digital de alta calidad. Una combinación sin concesiones.",
     idealPara: [
