@@ -10,6 +10,7 @@ export const CATEGORIAS = [
   "Parlantes",
   "Auriculares",
   "Tocadiscos",
+  "Combos",
   "Accesorios",
 ] as const
 
