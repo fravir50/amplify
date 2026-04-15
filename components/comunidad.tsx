@@ -91,7 +91,7 @@ export function Comunidad() {
               href="https://instagram.com/amplify.arg"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white/5 border-2 border-white text-white font-medium rounded-full hover:bg-white/10 transition-colors min-h-[48px]"
+              className="inline-flex items-center gap-2 bg-white/5 border-2 border-white text-white font-medium rounded-full hover:bg-white/10 transition-all duration-200 hover:scale-[1.02] min-h-[48px]"
               style={{
                 padding: "clamp(0.875rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem)",
                 fontSize: "16px",

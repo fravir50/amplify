@@ -29,7 +29,7 @@ export function FiltroCategoria({ categoriaActiva, onChange }: Props) {
           className={cn(
             "whitespace-nowrap rounded-full border px-4 py-1.5 text-sm transition-colors duration-200 focus:outline-none",
             cat === categoriaActiva
-              ? "border-[#FF6B35] bg-[#FF6B35]/5 text-[#FF6B35]"
+              ? "border-[#C9A96E] bg-[#C9A96E]/5 text-[#C9A96E]"
               : "border-white/20 text-white/60 hover:border-white/40 hover:text-white"
           )}
         >
