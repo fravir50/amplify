@@ -1,34 +1,23 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { AnimateOnScroll } from "./animate-on-scroll"
 import { productos } from "@/data/productos"
 
+const ITEMS_PER_PAGE = 3
 const preview = productos.filter((p) => p.categoria !== "Combos").slice(0, 6)
+const TOTAL_PAGES = Math.ceil(preview.length / ITEMS_PER_PAGE) // 2
 
 export function TiposProductos() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isMobile, setIsMobile] = useState(false)
+  const [page, setPage] = useState(0)
 
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768)
-    check()
-    window.addEventListener("resize", check)
-    return () => window.removeEventListener("resize", check)
-  }, [])
+  const next = () => setPage((p) => (p + 1) % TOTAL_PAGES)
+  const prev = () => setPage((p) => (p - 1 + TOTAL_PAGES) % TOTAL_PAGES)
 
-  const itemsPerPage = isMobile ? 1 : 3
-
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % preview.length)
-  const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + preview.length) % preview.length)
-
-  const visibleProducts = Array.from(
-    { length: itemsPerPage },
-    (_, i) => preview[(currentIndex + i) % preview.length]
-  )
+  const visible = preview.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE)
 
   return (
     <section id="tipos-productos" className="py-12 sm:py-16 lg:py-20">
@@ -41,18 +30,14 @@ export function TiposProductos() {
           </h2>
         </AnimateOnScroll>
 
-        {/* Carousel */}
+        {/* Grilla — siempre 3 columnas */}
         <AnimateOnScroll delay={150}>
-          <div
-            className={`${
-              isMobile ? "flex justify-center" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-            } gap-4 mb-6`}
-          >
-            {visibleProducts.map((producto, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            {visible.map((producto) => (
               <Link
-                key={`${producto.id}-${currentIndex}-${idx}`}
+                key={producto.id}
                 href={`/catalogo/${producto.id}`}
-                className={`group cursor-pointer ${isMobile ? "w-full max-w-xs" : ""}`}
+                className="group cursor-pointer"
               >
                 {/* Imagen */}
                 <div className="overflow-hidden rounded-2xl mb-3 relative aspect-[4/3] bg-[#1a1a1a]">
@@ -61,18 +46,16 @@ export function TiposProductos() {
                     alt={producto.nombre}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, 33vw"
                     quality={80}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
-                  {/* Badge */}
                   <div className="absolute top-3 right-3 z-10">
                     <span className="rounded-full bg-[#C9A96E]/90 px-2.5 py-1 text-[11px] font-medium text-black">
                       {producto.badge}
                     </span>
                   </div>
-                  {/* Categoría */}
                   <div className="absolute bottom-3 left-3 z-10">
                     <span className="rounded-full bg-black/50 backdrop-blur-sm px-2.5 py-1 text-[11px] font-medium text-white/70">
                       {producto.categoria}
@@ -96,41 +79,41 @@ export function TiposProductos() {
           </div>
         </AnimateOnScroll>
 
-        {/* Navegación */}
+        {/* Navegación por páginas */}
         <AnimateOnScroll delay={250}>
           <div className="flex items-center justify-center gap-4 mb-12">
             <button
-              onClick={prevSlide}
+              onClick={prev}
               className="w-10 h-10 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
-              aria-label="Producto anterior"
+              aria-label="Página anterior"
             >
               <ChevronLeft className="w-5 h-5 text-[#C9A96E]" />
             </button>
 
             <div className="flex gap-2 bg-[#2a2a2a] px-3 py-1.5 rounded-full">
-              {preview.map((_, index) => (
+              {Array.from({ length: TOTAL_PAGES }, (_, i) => (
                 <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
+                  key={i}
+                  onClick={() => setPage(i)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${
-                    index === currentIndex ? "bg-[#C9A96E] scale-125" : "bg-gray-600 hover:bg-gray-500"
+                    i === page ? "bg-[#C9A96E] scale-125" : "bg-gray-600 hover:bg-gray-500"
                   }`}
-                  aria-label={`Ir al producto ${index + 1}`}
+                  aria-label={`Página ${i + 1}`}
                 />
               ))}
             </div>
 
             <button
-              onClick={nextSlide}
+              onClick={next}
               className="w-10 h-10 rounded-full bg-[#2a2a2a] hover:bg-[#3a3a3a] transition-all duration-300 flex items-center justify-center hover:scale-110 active:scale-95 focus:outline-none"
-              aria-label="Producto siguiente"
+              aria-label="Página siguiente"
             >
               <ChevronRight className="w-5 h-5 text-[#C9A96E]" />
             </button>
           </div>
         </AnimateOnScroll>
 
-        {/* CTA: Ver catálogo */}
+        {/* CTA */}
         <AnimateOnScroll delay={300}>
           <div className="flex justify-center">
             <Link
