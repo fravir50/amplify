@@ -109,7 +109,7 @@ export default async function ProductoDetallePage({ params }: Props) {
 
             {/* Ideal para */}
             <section>
-              <h2 className="mb-4 text-lg font-semibold text-white">Ideal para</h2>
+              <h2 className="mb-4 text-lg font-semibold text-white">Es ideal para</h2>
               <ul className="space-y-2">
                 {producto.idealPara.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-white/60">
