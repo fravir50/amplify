@@ -113,7 +113,7 @@ export default async function ProductoDetallePage({ params }: Props) {
               <ul className="space-y-2">
                 {producto.idealPara.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-white/60">
-                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#FF6B35]" />
+                    <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#C9A96E]" />
                     {item}
                   </li>
                 ))}
