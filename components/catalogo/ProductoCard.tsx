@@ -56,17 +56,17 @@ export function ProductoCard({ producto, style }: Props) {
 
       {/* Info */}
       <div className="flex flex-col gap-2 p-5">
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] font-medium uppercase tracking-widest text-white/40">
-            {producto.marca}
-          </span>
-          <span className="text-sm font-semibold text-[#C9A96E]">
+        <span className="text-[11px] font-medium uppercase tracking-widest text-white/40">
+          {producto.marca}
+        </span>
+        <div className="flex items-baseline justify-between gap-2">
+          <h3 className="text-lg font-semibold leading-tight text-white">
+            {producto.nombre}
+          </h3>
+          <span className="flex-shrink-0 text-lg font-semibold text-[#C9A96E]">
             {producto.precio}
           </span>
         </div>
-        <h3 className="text-lg font-semibold leading-tight text-white">
-          {producto.nombre}
-        </h3>
         <p className="text-sm leading-relaxed text-white/60">
           {producto.frase}
         </p>

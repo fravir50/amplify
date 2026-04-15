@@ -78,6 +78,9 @@ export default async function ProductoDetallePage({ params }: Props) {
                 >
                   {producto.nombre}
                 </h1>
+                <p className="mt-1 text-xl font-semibold text-[#C9A96E]">
+                  {producto.precio}
+                </p>
               </div>
               <p className="text-base leading-relaxed text-white/60">
                 {producto.frase}
