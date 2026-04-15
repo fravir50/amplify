@@ -7,6 +7,8 @@ import Link from "next/link"
 import { AnimateOnScroll } from "./animate-on-scroll"
 import { productos } from "@/data/productos"
 
+const preview = productos.filter((p) => p.categoria !== "Combos").slice(0, 6)
+
 export function TiposProductos() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
@@ -20,12 +22,12 @@ export function TiposProductos() {
 
   const itemsPerPage = isMobile ? 1 : 3
 
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % productos.length)
-  const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + productos.length) % productos.length)
+  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % preview.length)
+  const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + preview.length) % preview.length)
 
   const visibleProducts = Array.from(
     { length: itemsPerPage },
-    (_, i) => productos[(currentIndex + i) % productos.length]
+    (_, i) => preview[(currentIndex + i) % preview.length]
   )
 
   return (
@@ -106,7 +108,7 @@ export function TiposProductos() {
             </button>
 
             <div className="flex gap-2 bg-[#2a2a2a] px-3 py-1.5 rounded-full">
-              {productos.map((_, index) => (
+              {preview.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
