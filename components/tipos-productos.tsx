@@ -8,7 +8,7 @@ import { AnimateOnScroll } from "./animate-on-scroll"
 import { productos } from "@/data/productos"
 
 const ITEMS_PER_PAGE = 3
-const preview = productos.filter((p) => p.categoria !== "Combos").slice(0, 6)
+const preview = productos.filter((p) => p.categoria !== "Combos").slice(0, 9)
 const TOTAL_PAGES = Math.ceil(preview.length / ITEMS_PER_PAGE) // 2
 
 export function TiposProductos() {
