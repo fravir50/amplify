@@ -303,7 +303,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD 679",
     frase: "Parlantes de estante con tecnología Uni-Q y absorción Meta de segunda generación.",
-    imagen: "/images/products/parlantes-kef-q1-meta.jpg",
+    imagen: "/images/products/parlantes-kef-q1-meta.png",
     descripcion:
       "Los KEF Q1 Meta son parlantes de estante de dos vías que incorporan el driver Uni-Q de KEF: tweeter de aluminio de 1\" ubicado en el centro exacto del woofer de 5.25\", lo que permite que ambos drivers emitan sonido desde el mismo punto en el espacio. La tecnología Meta absorbe el sonido no deseado proveniente de la parte trasera del tweeter, reduciendo la distorsión y mejorando la claridad en medios y altos. Requieren amplificador externo.",
     idealPara: [
