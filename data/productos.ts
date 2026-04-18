@@ -248,7 +248,7 @@ export const productos: Producto[] = [
     nombre: "YU6",
     marca: "Kanto",
     categoria: "Parlantes",
-    precio: "USD 450",
+    precio: "USD 949",
     frase: "Parlantes activos con Bluetooth, fono integrado y 200W de potencia total.",
     imagen: "/images/products/parlantes-kanto-yu6mb.jpg",
     descripcion:
@@ -271,10 +271,10 @@ export const productos: Producto[] = [
   },
   {
     id: "elac-debut-3-0",
-    nombre: "Debut 3.0",
+    nombre: "Debut 3.0 DB63",
     marca: "ELAC",
     categoria: "Parlantes",
-    precio: "USD 350",
+    precio: "USD 849",
     frase: "Parlantes pasivos de estante diseñados por Andrew Jones, referencia en su rango de precio.",
     imagen: "/images/products/parlantes-elac-debut-3-0.jpg",
     descripcion:
@@ -296,13 +296,40 @@ export const productos: Producto[] = [
     badge: "Entrega inmediata",
   },
 
+  {
+    id: "kef-q1-meta",
+    nombre: "Q1 Meta",
+    marca: "KEF",
+    categoria: "Parlantes",
+    precio: "USD 679",
+    frase: "Parlantes de estante con tecnología Uni-Q y absorción Meta de segunda generación.",
+    imagen: "/images/products/parlantes-kef-q1-meta.jpg",
+    descripcion:
+      "Los KEF Q1 Meta son parlantes de estante de dos vías que incorporan el driver Uni-Q de KEF: tweeter de aluminio de 1\" ubicado en el centro exacto del woofer de 5.25\", lo que permite que ambos drivers emitan sonido desde el mismo punto en el espacio. La tecnología Meta absorbe el sonido no deseado proveniente de la parte trasera del tweeter, reduciendo la distorsión y mejorando la claridad en medios y altos. Requieren amplificador externo.",
+    idealPara: [
+      "Usuarios que buscan una imagen estéreo precisa y envolvente",
+      "Setup de living o escritorio con amplificador integrado",
+      "Quienes quieren tecnología de driver coaxial a precio accesible",
+    ],
+    specs: {
+      Tipo: "Pasivos, 2 vías, estante",
+      Driver: "Uni-Q: 1\" tweeter aluminio + 5.25\" bass/mid aluminio",
+      "Tecnología": "Meta — absorción de resonancias internas del tweeter",
+      "Respuesta en frecuencia": "79Hz – 28kHz",
+      Sensibilidad: "86dB (2.83V/1m)",
+      Impedancia: "8 Ohm nominal",
+    },
+    encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
+    badge: "Entrega inmediata",
+  },
+
   // ── AMPLIFICADORES (nuevos) ───────────────────────────────────
   {
     id: "cambridge-audio-axa35",
     nombre: "AXA35",
     marca: "Cambridge Audio",
     categoria: "Amplificadores",
-    precio: "USD 350",
+    precio: "USD 709",
     frase: "Amplificador integrado puro con entrada phono MM y 35W por canal.",
     imagen: "/images/products/amplificador-cambridge-audio-axa35.jpg",
     descripcion:
@@ -330,7 +357,7 @@ export const productos: Producto[] = [
     nombre: "RT85",
     marca: "Fluance",
     categoria: "Tocadiscos",
-    precio: "USD 499",
+    precio: "USD 899",
     frase: "Tocadiscos de referencia con cápsula Ortofon 2M Blue y plato acrílico.",
     imagen: "/images/products/tocadiscos-fluance-rt85.jpg",
     descripcion:
@@ -356,7 +383,7 @@ export const productos: Producto[] = [
     nombre: "Debut EVO 2",
     marca: "Pro-Ject",
     categoria: "Tocadiscos",
-    precio: "USD 549",
+    precio: "USD 1.229",
     frase: "El tocadiscos europeo de referencia, rediseñado con brazo de aluminio de 8.6\".",
     imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2.jpg",
     descripcion:
