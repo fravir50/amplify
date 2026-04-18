@@ -115,7 +115,7 @@ export const productos: Producto[] = [
     categoria: "Amplificadores",
     precio: "USD 780",
     frase: "Amplificador integrado con streaming, DAC ESS y Dirac Live incorporado.",
-    imagen: "/images/products/amplificador-wiim-amp-ultra.jpg",
+    imagen: "/images/products/amplificador-wiim-amp-ultra.png",
     descripcion:
       "El WiiM Amp Ultra combina amplificador de 2×120W, streamer de alta resolución, DAC ESS y corrección de sala Dirac Live en un solo equipo. Es la solución definitiva para quien quiere calidad audiófila sin armar un rack completo: conectás tus parlantes pasivos y tenés un sistema completo en minutos.",
     idealPara: [
@@ -413,7 +413,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 1.349",
     frase: "Sistema completo: streaming, amplificación y vinilo en un solo combo.",
-    imagen: "/images/products/amplificador-wiim-amp-ultra.jpg",
+    imagen: "/images/products/amplificador-wiim-amp-ultra.png",
     descripcion:
       "El combo ideal para quien quiere un sistema Hi-Fi completo desde el día uno. El WiiM Amp Ultra maneja el streaming y la amplificación con Dirac Live, mientras el Music Hall MMF-1.3 se encarga del vinilo. Solo necesitás agregar parlantes pasivos.",
     idealPara: [
