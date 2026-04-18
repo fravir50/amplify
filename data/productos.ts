@@ -385,7 +385,7 @@ export const productos: Producto[] = [
     categoria: "Tocadiscos",
     precio: "USD 1.229",
     frase: "El tocadiscos europeo de referencia, rediseñado con brazo de aluminio de 8.6\".",
-    imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2.jpg",
+    imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2.png",
     descripcion:
       "El Pro-Ject Debut EVO 2 es la última versión del tocadiscos más vendido de la historia de la marca austriaca. Construido con un chasis MDF con aislamiento vibracional mejorado, brazo de aluminio de 8.6\" y control electrónico de velocidades, combina precisión de ingeniería europea con facilidad de uso. Incluye cápsula Ortofon OM10 y requiere preamplificador phono externo.",
     idealPara: [
