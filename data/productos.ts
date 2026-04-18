@@ -402,7 +402,7 @@ export const productos: Producto[] = [
       Ahorro: "USD 130 vs compra separada",
     },
     encajaCon: [],
-    badge: "Combo especial",
+    badge: "Entrega inmediata",
   },
   {
     id: "combo-denon-pma-600ne-mmf-1-3",
@@ -426,7 +426,7 @@ export const productos: Producto[] = [
       Ahorro: "USD 130 vs compra separada",
     },
     encajaCon: [],
-    badge: "Combo especial",
+    badge: "Entrega inmediata",
   },
   {
     id: "combo-hd-650-hip-dac-3",
@@ -450,7 +450,7 @@ export const productos: Producto[] = [
       Ahorro: "USD 61 vs compra separada",
     },
     encajaCon: [],
-    badge: "Combo especial",
+    badge: "Entrega inmediata",
   },
   {
     id: "combo-hd-600-hip-dac-3",
@@ -474,6 +474,6 @@ export const productos: Producto[] = [
       Ahorro: "USD 51 vs compra separada",
     },
     encajaCon: [],
-    badge: "Combo especial",
+    badge: "Entrega inmediata",
   },
 ]
