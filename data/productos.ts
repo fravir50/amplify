@@ -276,7 +276,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD 849",
     frase: "Parlantes pasivos de estante diseñados por Andrew Jones, referencia en su rango de precio.",
-    imagen: "/images/products/parlantes-elac-debut-3-0.jpg",
+    imagen: "/images/products/parlantes-elac-debut-3-0.png",
     descripcion:
       "Los ELAC Debut 3.0 son la última evolución de la serie que revolucionó el segmento de entrada Hi-Fi. Diseñados por Andrew Jones, exingeniero de TAD y Pioneer, combinan un woofer de fibra de aramida con un tweeter de seda para lograr un sonido coherente, detallado y sin fatiga auditiva. Requieren amplificador externo.",
     idealPara: [
