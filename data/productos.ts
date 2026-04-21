@@ -33,7 +33,7 @@ export const productos: Producto[] = [
     categoria: "Auriculares",
     precio: "USD 310",
     frase: "Auricular abierto de referencia, estándar de la industria desde 1997.",
-    imagen: "/images/products/auriculares-sennheiser-hd600.jpg",
+    imagen: "/images/products/auriculares-sennheiser-hd600.png",
     descripcion:
       "El Sennheiser HD 600 es uno de los auriculares más respetados en la historia del audio. Su driver de aluminio de 38mm ofrece una respuesta en frecuencia lineal y natural, sin coloraciones artificiales. Es el punto de partida preferido por ingenieros de sonido y audiófilos para escucha crítica.",
     idealPara: [
@@ -486,7 +486,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 529",
     frase: "Neutralidad de referencia con la fuente perfecta para auriculares de alta impedancia.",
-    imagen: "/images/products/auriculares-sennheiser-hd600.jpg",
+    imagen: "/images/products/auriculares-sennheiser-hd600.png",
     descripcion:
       "El HD 600 es conocido por su respuesta lineal y su capacidad de revelar todo lo que está en la grabación. El iFi Hip-Dac 3 provee la corriente necesaria para manejar sus 300 Ohm con comodidad, y agrega resolución digital de alta calidad. Una combinación sin concesiones.",
     idealPara: [
