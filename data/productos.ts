@@ -169,7 +169,7 @@ export const productos: Producto[] = [
     categoria: "Streamers",
     precio: "USD 410",
     frase: "Streamer todo-en-uno con DAC integrado y corrección de sala.",
-    imagen: "/images/products/streamer-wiim-ultra.jpg",
+    imagen: "/images/products/streamer-wiim-ultra.png",
     descripcion:
       "El WiiM Ultra es el streamer más completo de la línea WiiM. Combina streaming de alta resolución, DAC integrado, preamplificador y corrección de sala en un solo equipo compacto. Una solución sin compromisos para quien quiere calidad digital sin armar un rack completo.",
     idealPara: [
