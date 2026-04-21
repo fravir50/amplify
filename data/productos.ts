@@ -141,7 +141,7 @@ export const productos: Producto[] = [
     categoria: "Amplificadores",
     precio: "USD 800",
     frase: "Amplificador integrado con DAC incorporado y salida de auriculares dedicada.",
-    imagen: "/images/products/amplificador-denon-pma-600ne.jpg",
+    imagen: "/images/products/amplificador-denon-pma-600ne.png",
     descripcion:
       "El Denon PMA-600NE es un amplificador integrado que combina calidad de construcción japonesa con funcionalidad moderna. Sus 70W por canal manejan con solvencia la mayoría de los parlantes del mercado, y su DAC incorporado permite conectar la computadora vía USB para un sonido de alta resolución.",
     idealPara: [
@@ -410,7 +410,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 1.369",
     frase: "Amplificación japonesa de calidad y vinilo analógico en un combo.",
-    imagen: "/images/products/amplificador-denon-pma-600ne.jpg",
+    imagen: "/images/products/amplificador-denon-pma-600ne.png",
     descripcion:
       "El Denon PMA-600NE y el Music Hall MMF-1.3 forman un sistema analógico de referencia a precio accesible. El Denon aporta su característica calidez japonesa y 70W por canal, mientras el Music Hall se encarga de leer vinilos con precisión. Un setup clásico y confiable.",
     idealPara: [
