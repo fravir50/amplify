@@ -323,34 +323,6 @@ export const productos: Producto[] = [
     badge: "Entrega inmediata",
   },
 
-  // ── AMPLIFICADORES (nuevos) ───────────────────────────────────
-  {
-    id: "cambridge-audio-axa35",
-    nombre: "AXA35",
-    marca: "Cambridge Audio",
-    categoria: "Amplificadores",
-    precio: "USD 709",
-    frase: "Amplificador integrado puro con entrada phono MM y 35W por canal.",
-    imagen: "/images/products/amplificador-cambridge-audio-axa35.jpg",
-    descripcion:
-      "El Cambridge Audio AXA35 es un amplificador integrado de clase AB que sigue la filosofía de la marca: circuitos simples y componentes de calidad para lograr el sonido más honesto posible. Sus 35W por canal son más que suficientes para parlantes de estante en salas medianas, y la entrada phono MM integrada lo hace ideal para tocadiscos sin preamplificador externo.",
-    idealPara: [
-      "Primer amplificador integrado de calidad Hi-Fi",
-      "Setup con parlantes pasivos de estante y tocadiscos",
-      "Usuarios que priorizan pureza de señal sobre conectividad digital",
-    ],
-    specs: {
-      Potencia: "2×35W @8Ω",
-      Entradas: "4× RCA línea, 1× Phono MM, 1× AUX 3.5mm",
-      "Salida auriculares": "3.5mm frontal",
-      "Respuesta en frecuencia": "15Hz – 40kHz",
-      THD: "<0.003% (1kHz, 10W)",
-      Dimensiones: "430 × 75 × 290mm",
-    },
-    encajaCon: ["elac-debut-3-0", "fluance-rt85", "pro-ject-debut-evo-2"],
-    badge: "Entrega inmediata",
-  },
-
   // ── TOCADISCOS (nuevos) ───────────────────────────────────────
   {
     id: "fluance-rt85",
