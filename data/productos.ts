@@ -59,7 +59,7 @@ export const productos: Producto[] = [
     categoria: "Auriculares",
     precio: "USD 410",
     frase: "La evolución del HD 600: más cálido, más detallado, más musical.",
-    imagen: "/images/products/auriculares-sennheiser-hd650.jpg",
+    imagen: "/images/products/auriculares-sennheiser-hd650.png",
     descripcion:
       "El Sennheiser HD 650 es la versión refinada del HD 600, con un sonido ligeramente más cálido y una presentación de graves más profunda. Usado durante años como referencia por músicos y productores, equilibra neutralidad y musicalidad de una manera difícil de superar en su rango de precio.",
     idealPara: [
@@ -462,7 +462,7 @@ export const productos: Producto[] = [
     categoria: "Combos",
     precio: "USD 619",
     frase: "El setup de auriculares más equilibrado para escucha crítica.",
-    imagen: "/images/products/auriculares-sennheiser-hd650.jpg",
+    imagen: "/images/products/auriculares-sennheiser-hd650.png",
     descripcion:
       "El Sennheiser HD 650 y el iFi Hip-Dac 3 son una combinación probada en la comunidad audiófila. El Hip-Dac 3 provee la potencia y la fuente limpia que los 300 Ohm del HD 650 necesitan, mientras el auricular entrega su sonido cálido y detallado sin limitaciones.",
     idealPara: [
