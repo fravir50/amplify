@@ -331,7 +331,7 @@ export const productos: Producto[] = [
     categoria: "Tocadiscos",
     precio: "USD 899",
     frase: "Tocadiscos de referencia con cápsula Ortofon 2M Blue y plato acrílico.",
-    imagen: "/images/products/tocadiscos-fluance-rt85.jpg",
+    imagen: "/images/products/tocadiscos-fluance-rt85.png",
     descripcion:
       "El Fluance RT85 es el tocadiscos de referencia de entrada a medio rango. Incluye la cápsula Ortofon 2M Blue, una de las más respetadas en la comunidad audiófila, montada sobre un brazo de aluminio con contrapeso ajustable. El plato de acrílico reduce las resonancias del motor y eleva notablemente la resolución del sonido. Requiere preamplificador phono externo o amplificador con entrada phono.",
     idealPara: [
