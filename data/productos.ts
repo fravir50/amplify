@@ -195,7 +195,7 @@ export const productos: Producto[] = [
     categoria: "Streamers",
     precio: "USD 250",
     frase: "Streamer compacto con salida balanceada XLR y alta resolución.",
-    imagen: "/images/products/streamer-wiim-pro-plus.jpg",
+    imagen: "/images/products/streamer-wiim-pro-plus.png",
     descripcion:
       "El WiiM Pro Plus es la versión mejorada del WiiM Pro, con salida analógica balanceada XLR para conectar a amplificadores o preamplificadores de mayor calidad. Su DAC ESS ofrece soporte para alta resolución y es compatible con todas las plataformas de streaming principales.",
     idealPara: [
