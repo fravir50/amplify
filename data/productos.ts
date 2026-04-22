@@ -250,7 +250,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD 949",
     frase: "Parlantes activos con Bluetooth, fono integrado y 200W de potencia total.",
-    imagen: "/images/products/parlantes-kanto-yu6mb.jpg",
+    imagen: "/images/products/parlantes-kanto-yu6mb.png",
     descripcion:
       "Los Kanto YU6 son parlantes activos de dos vías que no necesitan amplificador externo. Con 200W totales biamplificados, Bluetooth 5.0 con aptX, preamplificador phono integrado para tocadiscos y múltiples entradas digitales y analógicas, son la solución todo-en-uno más completa del mercado para uso en escritorio o living.",
     idealPara: [
