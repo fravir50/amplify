@@ -5,10 +5,13 @@ import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { usePathname, useRouter } from "next/navigation"
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +24,13 @@ export function Navbar() {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev)
 
-  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault()
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
+      router.push("/")
+    }
   }
 
   return (
@@ -42,7 +49,7 @@ export function Navbar() {
             {/* Logo izquierda */}
             <Link
               href="/"
-              onClick={scrollToTop}
+              onClick={handleLogoClick}
               className="flex items-center transition-transform duration-300 hover:scale-105 flex-shrink-0"
             >
               <Image
@@ -58,40 +65,49 @@ export function Navbar() {
             {/* Links centro */}
             <div className="flex items-center gap-0.5 lg:gap-1">
               <Link
-                href="#quienes-somos"
+                href="/#quienes-somos"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 Quiénes somos
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
-                href="#como-funciona"
+                href="/#como-funciona"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 Cómo funciona
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
-                href="#comunidad"
+                href="/catalogo"
+                className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
+              >
+                Catálogo
+              </Link>
+              <div className="h-5 w-px bg-white/30" />
+              <Link
+                href="/#comunidad"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 Comunidad
               </Link>
               <div className="h-5 w-px bg-white/30" />
               <Link
-                href="#faqs"
+                href="/#faqs"
                 className="px-3 lg:px-5 text-sm lg:text-base font-normal text-white transition-all duration-300 hover:text-[#ff6b35] focus:outline-none"
               >
                 FAQs
               </Link>
             </div>
 
-            <Link
-              href="#hace-tu-pedido"
+            <a
+              href="https://wa.me/5491136228970?text=Hola%2C%20estoy%20interesado%20en%20hacer%20un%20pedido%20o%20adquirir%20un%20producto%20del%20cat%C3%A1logo%20de%20Amplify.%20%C2%BFMe%20pueden%20ayudar%3F"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-white bg-[#FF6B35] transition-all duration-300 hover:bg-[#FF6B35]/90 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,107,53,0.4)] active:scale-95 flex-shrink-0 -mr-4"
             >
               Hacé tu pedido
-            </Link>
+            </a>
           </div>
 
           {/* MOBILE NAVBAR */}
@@ -99,7 +115,7 @@ export function Navbar() {
             {/* Espaciador izquierdo para centrar logo */}
             <div className="w-10 flex-shrink-0" />
 
-            <Link href="/" onClick={scrollToTop} className="flex-1 flex items-center justify-center h-full">
+            <Link href="/" onClick={handleLogoClick} className="flex-1 flex items-center justify-center h-full">
               <Image
                 src="/images/logo-amplify-vector.png"
                 alt="Amplify - Audio Hi-Fi y Hi-End en Argentina"
@@ -139,7 +155,7 @@ export function Navbar() {
           <Link
             href="/"
             onClick={(e) => {
-              scrollToTop(e)
+              handleLogoClick(e)
               toggleMenu()
             }}
           >
@@ -165,7 +181,7 @@ export function Navbar() {
         {/* Links con animación escalonada */}
         <nav className="mt-10 px-6 space-y-2">
           <Link
-            href="#quienes-somos"
+            href="/#quienes-somos"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "100ms" : "0ms" }}
@@ -173,7 +189,7 @@ export function Navbar() {
             Quiénes somos
           </Link>
           <Link
-            href="#como-funciona"
+            href="/#como-funciona"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "150ms" : "0ms" }}
@@ -181,18 +197,26 @@ export function Navbar() {
             Cómo funciona
           </Link>
           <Link
-            href="#comunidad"
+            href="/catalogo"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "200ms" : "0ms" }}
           >
-            Comunidad
+            Catálogo
           </Link>
           <Link
-            href="#faqs"
+            href="/#comunidad"
             onClick={toggleMenu}
             className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
             style={{ transitionDelay: menuOpen ? "250ms" : "0ms" }}
+          >
+            Comunidad
+          </Link>
+          <Link
+            href="/#faqs"
+            onClick={toggleMenu}
+            className={`block text-2xl font-normal transition-all duration-500 hover:text-[#ff6b35] py-3 min-h-[48px] ${menuOpen ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
+            style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
           >
             FAQs
           </Link>
@@ -200,15 +224,17 @@ export function Navbar() {
 
         <div
           className={`px-6 mt-10 transition-all duration-500 ${menuOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`}
-          style={{ transitionDelay: menuOpen ? "300ms" : "0ms" }}
+          style={{ transitionDelay: menuOpen ? "350ms" : "0ms" }}
         >
-          <Link
-            href="#hace-tu-pedido"
+          <a
+            href="https://wa.me/5491136228970?text=Hola%2C%20estoy%20interesado%20en%20hacer%20un%20pedido%20o%20adquirir%20un%20producto%20del%20cat%C3%A1logo%20de%20Amplify.%20%C2%BFMe%20pueden%20ayudar%3F"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={toggleMenu}
             className="block w-full text-center rounded-full py-4 min-h-[48px] text-base font-medium text-white bg-[#FF6B35] transition-all duration-300 hover:bg-[#FF6B35]/90 active:scale-95 focus:outline-none"
           >
             Hacé tu pedido
-          </Link>
+          </a>
         </div>
       </div>
     </>

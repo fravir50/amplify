@@ -2,7 +2,7 @@ import { Hero } from "@/components/hero"
 import { Navbar } from "@/components/navbar"
 import { QuienesSomos } from "@/components/quienes-somos"
 import { ComoFunciona } from "@/components/como-funciona"
-import { HaceTuPedido } from "@/components/hace-tu-pedido"
+import { TiposProductos } from "@/components/tipos-productos"
 import { Comunidad } from "@/components/comunidad"
 import { FAQs } from "@/components/faqs"
 import { Footer } from "@/components/footer"
@@ -29,7 +29,7 @@ export default function Home() {
       >
         <QuienesSomos />
         <ComoFunciona />
-        <HaceTuPedido />
+        <TiposProductos />
         <Comunidad />
         <FAQs />
       </div>

@@ -9,14 +9,15 @@ export function ComoFunciona() {
       icon: MessageSquare,
       title: "Nos contás qué equipo querés",
       badge: "2 minutos",
-      description: "Completa el formulario con el equipo que te interesa. También podés escribirnos por WhatsApp o Instagram.",
+      description:
+        "En la esquina superior derecha, clickeá «Hacé tu pedido» y comentanos qué producto te interesa. También podés elegir directamente desde nuestro catálogo si el equipo ya está disponible.",
     },
     {
       icon: Package,
       title: "Cotizamos tu pedido",
       badge: "Respuesta en 48hs",
       description:
-        "Analizamos tu consulta y te enviamos un presupuesto detallado en PDF con valores, condiciones y tiempos de entrega estimados.",
+        "Analizamos tu consulta y te enviamos los valores, condiciones y tiempos de entrega estimados. Sin vueltas.",
     },
     {
       icon: Truck,
@@ -64,6 +65,8 @@ export function ComoFunciona() {
             )
           })}
         </div>
+
+
       </div>
     </section>
   )
