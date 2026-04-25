@@ -69,7 +69,7 @@ export default async function ProductoDetallePage({ params }: Props) {
                 producto.badge === "Sold Out"
                   ? "bg-red-500/10 text-red-400 border-red-500/30"
                   : producto.badge === "Próximamente"
-                  ? "bg-blue-500/10 text-blue-400 border-blue-500/30"
+                  ? "bg-amber-900/20 text-amber-700 border-amber-800/30"
                   : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
               }`}>
                 {producto.badge}
