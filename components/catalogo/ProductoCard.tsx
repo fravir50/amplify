@@ -52,7 +52,7 @@ export function ProductoCard({ producto, style }: Props) {
             producto.badge === "Sold Out"
               ? "bg-red-500/10 text-red-400 border-red-500/30"
               : producto.badge === "Próximamente"
-              ? "bg-amber-900/20 text-amber-700 border-amber-800/30"
+              ? "bg-[#3D2010]/40 text-[#C4783A] border-[#7A3D18]/40"
               : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
           )}>
             {producto.badge}
