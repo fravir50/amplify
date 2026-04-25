@@ -21,7 +21,7 @@ const faqData: FAQCategory[] = [
       {
         question: "¿Cómo hago un pedido?",
         answer:
-          "Completa el formulario con el equipo que te interesa. También podés escribirnos por WhatsApp o Instagram. Analizamos tu consulta y te enviamos una cotización clara y personalizada. Si te sirve, avanzamos con la seña y ponemos en marcha el proceso.",
+          "Tenemos un catálogo con productos curados por nosotros, al mejor precio del mercado y con entrega inmediata. Si buscás un producto que no está dentro de nuestro catálogo, nos escribís por WhatsApp y te armamos una cotización personalizada.",
       },
       {
         question: "¿Tengo que saber exactamente qué modelo quiero?",
@@ -43,14 +43,14 @@ const faqData: FAQCategory[] = [
     category: "Productos y marcas",
     questions: [
       {
-        question: "¿Qué marcas trabajan?",
-        answer:
-          "Prácticamente cualquier marca del mundo, desde Hi-Fi accesible hasta Hi-End. Operamos bajo pedido para conseguir exactamente el modelo que querés.",
-      },
-      {
         question: "¿Tienen catálogo propio?",
         answer:
           "Sí. Tenemos un catálogo variado, disponible para entrega inmediata, que garantiza los mejores precios posibles.",
+      },
+      {
+        question: "¿Qué marcas trabajan?",
+        answer:
+          "Prácticamente cualquier marca del mundo, desde Hi-Fi accesible hasta Hi-End. Si no la encontrás en nuestro catálogo, también operamos bajo pedido para conseguir exactamente la marca y modelo que querés.",
       },
       {
         question: "¿Puedo pedir un modelo exclusivo o recién lanzado?",
@@ -87,7 +87,7 @@ const faqData: FAQCategory[] = [
       {
         question: "¿Cuánto tarda en llegar un producto?",
         answer:
-          "Depende del origen, la disponibilidad y el proveedor. En tu cotización vas a recibir un estimado realista para tu caso puntual. Por lo general, entre 5 y 15 días, tenés el producto en tus manos.",
+          "Todos los productos de nuestro catálogo están disponibles para entrega inmediata. Si buscás un producto que no tenemos en stock, los tiempos de entrega son muy variables, pueden ir desde 10 a 45 días máximo.",
       },
       {
         question: "¿Hacen envíos?",
