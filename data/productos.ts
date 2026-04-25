@@ -211,7 +211,7 @@ export const productos: Producto[] = [
       Dimensiones: "100 × 100 × 28mm",
     },
     encajaCon: ["wiim-amp-ultra", "denon-pma-600ne"],
-    badge: "Entrega inmediata",
+    badge: "Sold Out",
   },
 
   // ── TOCADISCOS ───────────────────────────────────────────────
@@ -267,7 +267,7 @@ export const productos: Producto[] = [
       Salidas: "Subwoofer RCA, auriculares 3.5mm",
     },
     encajaCon: ["wiim-pro-plus", "wiim-ultra", "music-hall-mmf-1-3"],
-    badge: "Entrega inmediata",
+    badge: "Próximamente",
   },
   {
     id: "elac-debut-3-0",
@@ -293,7 +293,7 @@ export const productos: Producto[] = [
       Dimensiones: "175 × 290 × 245mm",
     },
     encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
-    badge: "Entrega inmediata",
+    badge: "Próximamente",
   },
 
   {
@@ -320,7 +320,7 @@ export const productos: Producto[] = [
       Impedancia: "8 Ohm nominal",
     },
     encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
-    badge: "Entrega inmediata",
+    badge: "Próximamente",
   },
 
   // ── TOCADISCOS (nuevos) ───────────────────────────────────────
@@ -348,7 +348,7 @@ export const productos: Producto[] = [
       "Preamplificador phono": "No incluido (requiere externo o entrada phono en el amp)",
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
-    badge: "Entrega inmediata",
+    badge: "Próximamente",
   },
   {
     id: "pro-ject-debut-evo-2",
@@ -374,7 +374,7 @@ export const productos: Producto[] = [
       "Preamplificador phono": "No incluido",
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
-    badge: "Entrega inmediata",
+    badge: "Próximamente",
   },
 
   // ── COMBOS ───────────────────────────────────────────────────

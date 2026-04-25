@@ -47,7 +47,14 @@ export function ProductoCard({ producto, style }: Props) {
 
         {/* Badge */}
         <div className="absolute left-3 top-3 z-10">
-          <span className="rounded-full bg-[#C9A96E]/10 px-2.5 py-1 text-[11px] font-medium text-[#C9A96E] border border-[#C9A96E]/20">
+          <span className={cn(
+            "rounded-full px-2.5 py-1 text-[11px] font-medium border",
+            producto.badge === "Sold Out"
+              ? "bg-red-500/10 text-red-400 border-red-500/30"
+              : producto.badge === "Próximamente"
+              ? "bg-white/5 text-white/50 border-white/10"
+              : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
+          )}>
             {producto.badge}
           </span>
         </div>
