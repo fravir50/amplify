@@ -65,7 +65,13 @@ export default async function ProductoDetallePage({ params }: Props) {
 
             {/* Datos */}
             <div className="flex flex-col justify-center gap-4 lg:col-span-2">
-              <span className="inline-block w-fit rounded-full bg-[#C9A96E]/10 px-3 py-1 text-xs font-medium text-[#C9A96E] border border-[#C9A96E]/20">
+              <span className={`inline-block w-fit rounded-full px-3 py-1 text-xs font-medium border ${
+                producto.badge === "Sold Out"
+                  ? "bg-red-500/10 text-red-400 border-red-500/30"
+                  : producto.badge === "Próximamente"
+                  ? "bg-blue-500/10 text-blue-400 border-blue-500/30"
+                  : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
+              }`}>
                 {producto.badge}
               </span>
               <div>
