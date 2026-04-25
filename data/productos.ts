@@ -396,7 +396,7 @@ export const productos: Producto[] = [
     badge: "Próximamente",
     colores: [
       { nombre: "Satin Black", hex: "#2D2D2D" },
-      { nombre: "Satin Red", hex: "#B22222", imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2-red.png" },
+      { nombre: "Satin Red", hex: "#410713", imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2-red.png" },
     ],
   },
 
