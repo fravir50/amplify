@@ -52,7 +52,13 @@ export function TiposProductos() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
                   <div className="absolute top-3 right-3 z-10">
-                    <span className="rounded-full bg-[#C9A96E]/90 px-2.5 py-1 text-[11px] font-medium text-black">
+                    <span className={`rounded-full px-2.5 py-1 text-[11px] font-medium border ${
+                      producto.badge === "Sold Out"
+                        ? "bg-red-500/10 text-red-400 border-red-500/30"
+                        : producto.badge === "Próximamente"
+                        ? "bg-[#3D2010]/40 text-[#C4783A] border-[#7A3D18]/40"
+                        : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
+                    }`}>
                       {producto.badge}
                     </span>
                   </div>
