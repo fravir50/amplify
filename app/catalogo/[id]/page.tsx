@@ -1,12 +1,11 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { productos, WHATSAPP_NUMBER } from "@/data/productos"
 import { ProductoCard } from "@/components/catalogo/ProductoCard"
-import { ColorSelector } from "@/components/catalogo/ColorSelector"
+import { ProductoHero } from "@/components/catalogo/ProductoHero"
 
 interface Props {
   params: Promise<{ id: string }>
@@ -47,65 +46,17 @@ export default async function ProductoDetallePage({ params }: Props) {
             Volver al catálogo
           </Link>
 
-          {/* Hero: imagen + datos */}
-          <div className="mb-16 grid grid-cols-1 gap-8 lg:grid-cols-5">
-            {/* Imagen */}
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-[#1a1a1a] lg:col-span-3">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white/20 text-sm select-none">Imagen</span>
-              </div>
-              <Image
-                src={producto.imagen}
-                alt={producto.nombre}
-                fill
-                className="object-cover"
-                loading="lazy"
-                sizes="(max-width: 1024px) 100vw, 60vw"
-              />
-            </div>
-
-            {/* Datos */}
-            <div className="flex flex-col justify-center gap-4 lg:col-span-2">
-              <span className={`inline-block w-fit rounded-full px-3 py-1 text-xs font-medium border ${
-                producto.badge === "Sold Out"
-                  ? "bg-red-500/10 text-red-400 border-red-500/30"
-                  : producto.badge === "Próximamente"
-                  ? "bg-[#3D2010]/40 text-[#C4783A] border-[#7A3D18]/40"
-                  : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
-              }`}>
-                {producto.badge}
-              </span>
-              <div>
-                <p className="mb-1 text-xs font-medium uppercase tracking-widest text-white/40">
-                  {producto.marca}
-                </p>
-                <h1
-                  className="font-semibold text-white"
-                  style={{ fontSize: "clamp(1.75rem, 4vw, 2.5rem)" }}
-                >
-                  {producto.nombre}
-                </h1>
-                <p className="mt-1 text-xl font-semibold text-[#C9A96E]">
-                  {producto.precio}
-                </p>
-              </div>
-              <p className="text-base leading-relaxed text-white/60">
-                {producto.frase}
-              </p>
-
-              <ColorSelector colores={producto.colores} />
-
-              {/* CTA desktop */}
-              <a
-                href={buildWhatsAppUrl(producto.nombre)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 hidden rounded-full bg-[#FF6B35] px-6 py-3 text-center text-base font-medium text-white transition-all duration-300 hover:bg-[#FF6B35]/90 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(255,107,53,0.4)] active:scale-95 lg:block"
-              >
-                Consultar por este producto
-              </a>
-            </div>
-          </div>
+          {/* Hero: imagen + datos (cliente para soportar cambio de imagen por color) */}
+          <ProductoHero
+            imagenBase={producto.imagen}
+            nombre={producto.nombre}
+            marca={producto.marca}
+            precio={producto.precio}
+            frase={producto.frase}
+            badge={producto.badge}
+            colores={producto.colores}
+            whatsappUrl={buildWhatsAppUrl(producto.nombre)}
+          />
 
           {/* Bloques de contenido */}
           <div className="mx-auto max-w-3xl space-y-14">

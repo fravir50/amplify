@@ -10,6 +10,7 @@
 export interface ColorVariante {
   nombre: string
   hex: string
+  imagen?: string
 }
 
 export interface Producto {
@@ -393,7 +394,10 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
     badge: "Próximamente",
-    colores: [{ nombre: "Satin Black", hex: "#2D2D2D" }, { nombre: "Satin Red", hex: "#B22222" }],
+    colores: [
+      { nombre: "Satin Black", hex: "#2D2D2D" },
+      { nombre: "Satin Red", hex: "#B22222", imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2-red.png" },
+    ],
   },
 
   // ── COMBOS ───────────────────────────────────────────────────
