@@ -114,7 +114,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["sennheiser-hd-600", "sennheiser-hd-650"],
     badge: "Entrega inmediata",
-    colores: [{ nombre: "Champagne", hex: "#C4A35A" }],
+    colores: [{ nombre: "Yellow", hex: "#C4A35A" }],
   },
 
   // ── AMPLIFICADORES ───────────────────────────────────────────
