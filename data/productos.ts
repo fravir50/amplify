@@ -7,6 +7,11 @@
 // El campo `encajaCon` es un array de `id`s de otros productos relacionados.
 // ─────────────────────────────────────────────────────────────
 
+export interface ColorVariante {
+  nombre: string
+  hex: string
+}
+
 export interface Producto {
   id: string
   nombre: string
@@ -20,6 +25,7 @@ export interface Producto {
   specs: Record<string, string>
   encajaCon: string[]
   badge: string
+  colores: ColorVariante[]
 }
 
 export const WHATSAPP_NUMBER = "5491136228970"
@@ -51,6 +57,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["ifi-hip-dac-3"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Graphite", hex: "#3D3D3D" }],
   },
   {
     id: "sennheiser-hd-650",
@@ -77,6 +84,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["ifi-hip-dac-3"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Charcoal", hex: "#2A2A2A" }],
   },
 
   // ── DACs ─────────────────────────────────────────────────────
@@ -105,6 +113,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["sennheiser-hd-600", "sennheiser-hd-650"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Champagne", hex: "#C4A35A" }],
   },
 
   // ── AMPLIFICADORES ───────────────────────────────────────────
@@ -133,6 +142,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["music-hall-mmf-1-3"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Space Grey", hex: "#5A5F6E" }],
   },
   {
     id: "denon-pma-600ne",
@@ -159,6 +169,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["music-hall-mmf-1-3"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Black", hex: "#1A1A1A" }],
   },
 
   // ── STREAMERS ────────────────────────────────────────────────
@@ -187,6 +198,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Space Grey", hex: "#5A5F6E" }],
   },
   {
     id: "wiim-pro-plus",
@@ -212,6 +224,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Sold Out",
+    colores: [{ nombre: "Black", hex: "#1A1A1A" }],
   },
 
   // ── TOCADISCOS ───────────────────────────────────────────────
@@ -240,6 +253,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Entrega inmediata",
+    colores: [{ nombre: "Black", hex: "#1A1A1A" }],
   },
 
   // ── PARLANTES ────────────────────────────────────────────────
@@ -268,6 +282,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["wiim-pro-plus", "wiim-ultra", "music-hall-mmf-1-3"],
     badge: "Próximamente",
+    colores: [{ nombre: "Black", hex: "#1A1A1A" }],
   },
   {
     id: "elac-debut-3-0",
@@ -294,6 +309,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Próximamente",
+    colores: [{ nombre: "Walnut", hex: "#8B5E3C" }],
   },
 
   {
@@ -321,6 +337,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Próximamente",
+    colores: [{ nombre: "Black", hex: "#1A1A1A" }],
   },
 
   // ── TOCADISCOS (nuevos) ───────────────────────────────────────
@@ -349,6 +366,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
     badge: "Próximamente",
+    colores: [{ nombre: "Walnut", hex: "#8B5E3C" }],
   },
   {
     id: "pro-ject-debut-evo-2",
@@ -375,6 +393,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
     badge: "Próximamente",
+    colores: [{ nombre: "Satin Black", hex: "#2D2D2D" }, { nombre: "Satin Red", hex: "#B22222" }],
   },
 
   // ── COMBOS ───────────────────────────────────────────────────
@@ -402,6 +421,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Entrega inmediata",
+    colores: [],
   },
   {
     id: "combo-denon-pma-600ne-mmf-1-3",
@@ -426,6 +446,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Entrega inmediata",
+    colores: [],
   },
   {
     id: "combo-hd-650-hip-dac-3",
@@ -450,6 +471,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Entrega inmediata",
+    colores: [],
   },
   {
     id: "combo-hd-600-hip-dac-3",
@@ -474,5 +496,6 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Entrega inmediata",
+    colores: [],
   },
 ]

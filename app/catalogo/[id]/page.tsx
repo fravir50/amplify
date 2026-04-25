@@ -6,6 +6,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { productos, WHATSAPP_NUMBER } from "@/data/productos"
 import { ProductoCard } from "@/components/catalogo/ProductoCard"
+import { ColorSelector } from "@/components/catalogo/ColorSelector"
 
 interface Props {
   params: Promise<{ id: string }>
@@ -91,6 +92,8 @@ export default async function ProductoDetallePage({ params }: Props) {
               <p className="text-base leading-relaxed text-white/60">
                 {producto.frase}
               </p>
+
+              <ColorSelector colores={producto.colores} />
 
               {/* CTA desktop */}
               <a
