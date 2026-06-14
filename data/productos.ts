@@ -537,7 +537,7 @@ export const productos: Producto[] = [
     categoria: "Amplificadores",
     precio: "USD —",
     frase: "Amplificador integrado compacto con phono MM y cinco entradas analógicas.",
-    imagen: "",
+    imagen: "/images/products/amplificador-cambridge-axa35.png",
     descripcion:
       "El Cambridge Audio AXA35 es el amplificador integrado de entrada de la serie AX. Con 35W por canal, etapa phono MM incorporada y cinco entradas analógicas, ofrece todo lo necesario para un primer sistema Hi-Fi sin complicaciones. Diseño clásico Cambridge en un formato compacto.",
     idealPara: [
@@ -589,7 +589,7 @@ export const productos: Producto[] = [
     categoria: "Amplificadores",
     precio: "USD —",
     frase: "Amplificador streaming con BluOS, Dirac Live y 80W por canal.",
-    imagen: "",
+    imagen: "/images/products/amplificador-nad-c700-v2.png",
     descripcion:
       "El NAD C 700 V2 es un amplificador streaming all-in-one con la plataforma BluOS integrada. Sus 80W por canal en Clase D de alta eficiencia van acompañados de Dirac Live para corrección de sala, AirPlay 2, Chromecast y soporte para alta resolución. La propuesta más completa de NAD en formato compacto.",
     idealPara: [
@@ -617,7 +617,7 @@ export const productos: Producto[] = [
     categoria: "Streamers",
     precio: "USD —",
     frase: "Reproductor de CD con DAC de alta resolución y salida digital.",
-    imagen: "",
+    imagen: "/images/products/streamer-marantz-cd6007.png",
     descripcion:
       "El Marantz CD6007 es el reproductor de CD de referencia de la línea actual de Marantz. Incluye DAC de alta resolución, salida digital coaxial y óptica, y el característico sonido cálido de la marca japonesa. Una pieza fundamental para quienes mantienen colección de CDs.",
     idealPara: [
@@ -643,7 +643,7 @@ export const productos: Producto[] = [
     categoria: "Streamers",
     precio: "USD —",
     frase: "Streamer con lector de CD integrado, pantalla táctil y DAC ESS.",
-    imagen: "",
+    imagen: "/images/products/streamer-eversolo-play-cd.png",
     descripcion:
       "El Eversolo Play CD Edition combina un streamer de red completo con un lector de CD integrado. Pantalla táctil a color, DAC ESS de alta resolución, soporte para Roon, Tidal Connect, AirPlay 2 y más. El equipo más versátil para quien quiere gestionar colección física y streaming desde un solo dispositivo.",
     idealPara: [
@@ -671,7 +671,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD —",
     frase: "Parlante de estante de herencia británica con woofer de lana y tweeter de seda.",
-    imagen: "",
+    imagen: "/images/products/parlantes-wharfedale-super-denton.png",
     descripcion:
       "El Wharfedale Super Denton es la versión actualizada del clásico Denton, un ícono del sonido británico. Su woofer de 6.5\" con cono de lana y tweeter de cúpula de seda ofrecen un sonido cálido, detallado y envolvente. Terminación en madera con diseño retro que destaca en cualquier setup.",
     idealPara: [
@@ -697,7 +697,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD —",
     frase: "Parlantes de estante compactos con sonido Cambridge de referencia.",
-    imagen: "",
+    imagen: "/images/products/parlantes-cambridge-audio-lrs.png",
     descripcion:
       "Los Cambridge Audio L/R S son parlantes de estante compactos que combinan la filosofía de diseño de Cambridge Audio con un precio accesible. Diseñados para integrarse a amplificadores integrados de la marca o de terceros, ofrecen un balance musical preciso y sin coloraciones.",
     idealPara: [
@@ -773,7 +773,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD —",
     frase: "Torre de piso de la serie Debut 3.0: el ELAC DB63 en formato floorstanding.",
-    imagen: "",
+    imagen: "/images/products/parlantes-elac-debut-3-0-df63.png",
     descripcion:
       "El ELAC Debut 3.0 DF63 es la versión de pie de la serie diseñada por Andrew Jones. Tres drivers de 6.5\" de fibra de aramida y un tweeter de seda de 1\" ofrecen una respuesta en frecuencia que llega hasta los 40Hz sin subwoofer. La solución para quien quiere el sonido Debut 3.0 con presencia y cuerpo en bajos.",
     idealPara: [
@@ -828,7 +828,7 @@ export const productos: Producto[] = [
     categoria: "Tocadiscos",
     precio: "USD —",
     frase: "Tocadiscos de accionamiento directo con USB, fono incorporado y tres velocidades.",
-    imagen: "",
+    imagen: "/images/products/tocadiscos-audio-technica-at-lp120xusb.png",
     descripcion:
       "El Audio-Technica AT-LP120XUSB es el tocadiscos de accionamiento directo más popular del mercado. Preamplificador phono incorporado, salida USB para digitalizar discos, soporte para 33/45/78 RPM y control de velocidad manual. Viene con cápsula AT-VM95E y es una referencia en la relación calidad-precio.",
     idealPara: [
