@@ -9,17 +9,17 @@ const posts = [
   {
     id: 1,
     image: "/images/home-theater.jpeg",
-    instagramUrl: "https://instagram.com/amplify.arg",
+    instagramUrl: "https://www.instagram.com/p/DY79h7QjGmU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
     id: 2,
     image: "/images/wiim-vs-bt.jpeg",
-    instagramUrl: "https://instagram.com/amplify.arg",
+    instagramUrl: "https://www.instagram.com/p/DYuOmswjReh/?utm_source=ig_web_copy_link",
   },
   {
     id: 3,
     image: "/images/comparativa-sennheiser.jpeg",
-    instagramUrl: "https://instagram.com/amplify.arg",
+    instagramUrl: "https://www.instagram.com/p/DXpp4QcDPAE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ]
 
