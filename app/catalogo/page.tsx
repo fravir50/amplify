@@ -48,7 +48,7 @@ function CatalogoContent() {
             Catálogo
           </h1>
           <p className="text-white/50" style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}>
-            Disponibles para entrega inmediata en CABA.
+            Consultar disponibilidad para cada producto.
           </p>
         </div>
 

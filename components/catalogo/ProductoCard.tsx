@@ -45,19 +45,6 @@ export function ProductoCard({ producto, style }: Props) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
 
-        {/* Badge */}
-        <div className="absolute left-3 top-3 z-10">
-          <span className={cn(
-            "rounded-full px-2.5 py-1 text-[11px] font-medium border",
-            producto.badge === "Sold Out"
-              ? "bg-red-500/10 text-red-400 border-red-500/30"
-              : producto.badge === "Próximamente"
-              ? "bg-[#3D2010]/40 text-[#C4783A] border-[#7A3D18]/40"
-              : "bg-[#C9A96E]/10 text-[#C9A96E] border-[#C9A96E]/20"
-          )}>
-            {producto.badge}
-          </span>
-        </div>
 
         {/* Combo ribbon */}
         {producto.categoria === "Combos" && (
