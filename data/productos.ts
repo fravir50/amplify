@@ -511,7 +511,7 @@ export const productos: Producto[] = [
     categoria: "Amplificadores",
     precio: "USD —",
     frase: "Amplificador integrado británico con etapa phono MM de alta calidad.",
-    imagen: "",
+    imagen: "/images/products/amplificador-rega-brio.png",
     descripcion:
       "El Rega Brio es el amplificador integrado de referencia de la marca británica. Con 50W por canal en Clase A/B y una etapa phono MM internamente célebre, es la opción natural para completar un setup con tocadiscos. Construcción compacta y sonido dinámico sin coloraciones.",
     idealPara: [
