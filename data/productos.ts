@@ -563,7 +563,7 @@ export const productos: Producto[] = [
     categoria: "Amplificadores",
     precio: "USD —",
     frase: "Receiver integrado con streaming HEOS, AirPlay 2 y 60W por canal.",
-    imagen: "",
+    imagen: "/images/products/amplificador-marantz-model-60n.png",
     descripcion:
       "El Marantz Model 60n combina amplificación de 60W por canal con streaming integrado vía HEOS y AirPlay 2. Incluye DAC de alta resolución, bluetooth aptX HD y múltiples entradas digitales y analógicas. La solución all-in-one para quienes buscan el sonido cálido de Marantz con conectividad moderna.",
     idealPara: [
@@ -719,7 +719,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD —",
     frase: "El monitor de referencia de KEF con Uni-Q y tecnología Meta de absorción.",
-    imagen: "",
+    imagen: "/images/products/parlantes-kef-ls50-meta.png",
     descripcion:
       "El KEF LS50 Meta es una de las referencias absolutas en parlantes de estante. El driver Uni-Q coloca el tweeter de aluminio en el centro exacto del woofer, creando una fuente de sonido puntual. La tecnología Meta absorbe el sonido trasero del tweeter con un laberinto metamaterial, reduciendo distorsión y mejorando la resolución de medios y altos de forma dramática.",
     idealPara: [
@@ -746,7 +746,7 @@ export const productos: Producto[] = [
     categoria: "Parlantes",
     precio: "USD —",
     frase: "Parlante de estante Uni-Q con tecnología Meta: más grave y más escena que el Q1.",
-    imagen: "",
+    imagen: "/images/products/parlantes-kef-q3-meta.png",
     descripcion:
       "El KEF Q3 Meta es el segundo escalón de la serie Q Meta, con un woofer de 6.5\" que amplía el rango de bajos respecto al Q1 Meta. Mantiene el driver Uni-Q de aluminio y la tecnología Meta para una imagen estéreo ejemplar. Ideal para living o espacios más grandes donde el Q1 puede quedar justo.",
     idealPara: [
@@ -801,7 +801,7 @@ export const productos: Producto[] = [
     categoria: "Tocadiscos",
     precio: "USD —",
     frase: "Tocadiscos de entrada con preamplificador phono integrado y diseño minimalista.",
-    imagen: "",
+    imagen: "/images/products/tocadiscos-pro-ject-t1-evo-phono.png",
     descripcion:
       "El Pro-Ject T1 Evo Phono es el punto de entrada a la línea T de Pro-Ject. Accionamiento por correa, brazo de aluminio y preamplificador phono MM incorporado para conectar directamente a cualquier amplificador. La propuesta más sencilla y confiable de la marca austriaca para empezar con el vinilo.",
     idealPara: [
