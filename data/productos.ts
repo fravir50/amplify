@@ -33,61 +33,6 @@ export interface Producto {
 export const WHATSAPP_NUMBER = "5491136228970"
 
 export const productos: Producto[] = [
-  // ── AURICULARES ──────────────────────────────────────────────
-  {
-    id: "sennheiser-hd-600",
-    nombre: "HD 600",
-    marca: "Sennheiser",
-    categoria: "Auriculares",
-    precio: "USD 310",
-    frase: "Auricular abierto de referencia, estándar de la industria desde 1997.",
-    imagen: "/images/products/auriculares-sennheiser-hd600.png",
-    descripcion:
-      "El Sennheiser HD 600 es uno de los auriculares más respetados en la historia del audio. Su driver de aluminio de 38mm ofrece una respuesta en frecuencia lineal y natural, sin coloraciones artificiales. Es el punto de partida preferido por ingenieros de sonido y audiófilos para escucha crítica.",
-    idealPara: [
-      "Escucha crítica y análisis musical",
-      "Usuarios que buscan neutralidad sin fatiga auditiva",
-      "Primer auricular de referencia Hi-Fi",
-    ],
-    specs: {
-      Tipo: "Circumaural abierto",
-      Driver: "38mm dinámico (aluminio)",
-      "Respuesta en frecuencia": "12Hz – 39kHz",
-      Impedancia: "300 Ohm",
-      Sensibilidad: "97dB SPL/1V",
-      THD: "<0.1% (1kHz, 100dB SPL)",
-    },
-    encajaCon: ["ifi-hip-dac-3"],
-    badge: "Entrega inmediata",
-    colores: [{ nombre: "Graphite", hex: "#3D3D3D" }],
-  },
-  {
-    id: "sennheiser-hd-650",
-    nombre: "HD 650",
-    marca: "Sennheiser",
-    categoria: "Auriculares",
-    precio: "USD 410",
-    frase: "La evolución del HD 600: más cálido, más detallado, más musical.",
-    imagen: "/images/products/auriculares-sennheiser-hd650.png",
-    descripcion:
-      "El Sennheiser HD 650 es la versión refinada del HD 600, con un sonido ligeramente más cálido y una presentación de graves más profunda. Usado durante años como referencia por músicos y productores, equilibra neutralidad y musicalidad de una manera difícil de superar en su rango de precio.",
-    idealPara: [
-      "Escucha prolongada sin fatiga",
-      "Géneros con mucha dinámica: jazz, clásica, folk",
-      "Usuarios que buscan más calidez que el HD 600",
-    ],
-    specs: {
-      Tipo: "Circumaural abierto",
-      Driver: "40mm dinámico mejorado",
-      "Respuesta en frecuencia": "10Hz – 41kHz",
-      Impedancia: "300 Ohm",
-      Sensibilidad: "103dB SPL/1V",
-      THD: "<0.05%",
-    },
-    encajaCon: ["ifi-hip-dac-3"],
-    badge: "Entrega inmediata",
-    colores: [{ nombre: "Charcoal", hex: "#2A2A2A" }],
-  },
 
   // ── DACs ─────────────────────────────────────────────────────
   {
@@ -103,7 +48,7 @@ export const productos: Producto[] = [
     idealPara: [
       "Mejorar el sonido de auriculares de alta impedancia desde el celular",
       "Uso portátil o en escritorio",
-      "Usuarios con auriculares Sennheiser HD 600/650",
+      "Usuarios con auriculares de alta impedancia (300 Ohm)",
     ],
     specs: {
       DAC: "Burr-Brown",
@@ -113,7 +58,7 @@ export const productos: Producto[] = [
       "Potencia": "400mW @32Ω (balanceado)",
       Batería: "Hasta 12hs",
     },
-    encajaCon: ["sennheiser-hd-600", "sennheiser-hd-650"],
+    encajaCon: [],
     badge: "Entrega inmediata",
     colores: [{ nombre: "Yellow", hex: "#C4A35A" }],
   },
@@ -453,56 +398,6 @@ export const productos: Producto[] = [
       Amplificación: "2×70W @4Ω con DAC USB incorporado",
       Tocadiscos: "Motor DC, cápsula AT3600L, phono integrado",
       Ahorro: "USD 130 vs compra separada",
-    },
-    encajaCon: [],
-    badge: "Entrega inmediata",
-    colores: [],
-  },
-  {
-    id: "combo-hd-650-hip-dac-3",
-    nombre: "HD 650 + Hip-Dac 3",
-    marca: "Sennheiser + iFi",
-    categoria: "Combos",
-    precio: "USD 619",
-    frase: "El setup de auriculares más equilibrado para escucha crítica.",
-    imagen: "/images/products/auriculares-sennheiser-hd650.png",
-    descripcion:
-      "El Sennheiser HD 650 y el iFi Hip-Dac 3 son una combinación probada en la comunidad audiófila. El Hip-Dac 3 provee la potencia y la fuente limpia que los 300 Ohm del HD 650 necesitan, mientras el auricular entrega su sonido cálido y detallado sin limitaciones.",
-    idealPara: [
-      "Setup de escritorio o bedroom Hi-Fi con auriculares",
-      "Escucha crítica y prolongada",
-      "Usuarios que quieren lo mejor de auriculares abiertos",
-    ],
-    specs: {
-      Incluye: "Sennheiser HD 650 + iFi Hip-Dac 3",
-      Auricular: "Circumaural abierto, 300 Ohm, 10Hz–41kHz",
-      DAC: "Burr-Brown, salida balanceada 4.4mm, hasta DSD256",
-      Ahorro: "USD 61 vs compra separada",
-    },
-    encajaCon: [],
-    badge: "Entrega inmediata",
-    colores: [],
-  },
-  {
-    id: "combo-hd-600-hip-dac-3",
-    nombre: "HD 600 + Hip-Dac 3",
-    marca: "Sennheiser + iFi",
-    categoria: "Combos",
-    precio: "USD 529",
-    frase: "Neutralidad de referencia con la fuente perfecta para auriculares de alta impedancia.",
-    imagen: "/images/products/auriculares-sennheiser-hd600.png",
-    descripcion:
-      "El HD 600 es conocido por su respuesta lineal y su capacidad de revelar todo lo que está en la grabación. El iFi Hip-Dac 3 provee la corriente necesaria para manejar sus 300 Ohm con comodidad, y agrega resolución digital de alta calidad. Una combinación sin concesiones.",
-    idealPara: [
-      "Escucha neutral y analítica",
-      "Ingenieros y productores musicales",
-      "Primer setup audiófilo de referencia",
-    ],
-    specs: {
-      Incluye: "Sennheiser HD 600 + iFi Hip-Dac 3",
-      Auricular: "Circumaural abierto, 300 Ohm, 12Hz–39kHz",
-      DAC: "Burr-Brown, salida balanceada 4.4mm, hasta DSD256",
-      Ahorro: "USD 51 vs compra separada",
     },
     encajaCon: [],
     badge: "Entrega inmediata",
