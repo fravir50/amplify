@@ -94,7 +94,7 @@ export const productos: Producto[] = [
     nombre: "Hip-Dac 3",
     marca: "iFi",
     categoria: "DACs",
-    precio: "USD 270",
+    precio: "USD 319",
     frase: "DAC/amplificador portátil con salida balanceada y soporte para alta resolución.",
     imagen: "/images/products/dac-ifi-hip-dac3.png",
     descripcion:
@@ -123,7 +123,7 @@ export const productos: Producto[] = [
     nombre: "Amp Ultra",
     marca: "WiiM",
     categoria: "Amplificadores",
-    precio: "USD 780",
+    precio: "USD 850",
     frase: "Amplificador integrado con streaming, DAC ESS y Dirac Live incorporado.",
     imagen: "/images/products/amplificador-wiim-amp-ultra.png",
     descripcion:
@@ -150,7 +150,7 @@ export const productos: Producto[] = [
     nombre: "PMA-600NE",
     marca: "Denon",
     categoria: "Amplificadores",
-    precio: "USD 800",
+    precio: "USD 900",
     frase: "Amplificador integrado con DAC incorporado y salida de auriculares dedicada.",
     imagen: "/images/products/amplificador-denon-pma-600ne.png",
     descripcion:
@@ -179,7 +179,7 @@ export const productos: Producto[] = [
     nombre: "Ultra",
     marca: "WiiM",
     categoria: "Streamers",
-    precio: "USD 410",
+    precio: "USD 579",
     frase: "Streamer todo-en-uno con DAC integrado y corrección de sala.",
     imagen: "/images/products/streamer-wiim-ultra.png",
     descripcion:
@@ -206,7 +206,7 @@ export const productos: Producto[] = [
     nombre: "Pro Plus",
     marca: "WiiM",
     categoria: "Streamers",
-    precio: "USD 250",
+    precio: "USD 349",
     frase: "Streamer compacto con salida balanceada XLR y alta resolución.",
     imagen: "/images/products/streamer-wiim-pro-plus.png",
     descripcion:
@@ -234,7 +234,7 @@ export const productos: Producto[] = [
     nombre: "MMF-1.3",
     marca: "Music Hall",
     categoria: "Tocadiscos",
-    precio: "USD 699",
+    precio: "USD 819",
     frase: "Tocadiscos de entrada con preamplificador phono integrado y cápsula incluida.",
     imagen: "/images/products/tocadiscos-music-hall-mmf-1-3.png",
     descripcion:
@@ -263,7 +263,7 @@ export const productos: Producto[] = [
     nombre: "YU6",
     marca: "Kanto",
     categoria: "Parlantes",
-    precio: "USD 949",
+    precio: "USD 1.030",
     frase: "Parlantes activos con Bluetooth, fono integrado y 200W de potencia total.",
     imagen: "/images/products/parlantes-kanto-yu6mb.png",
     descripcion:
@@ -290,7 +290,7 @@ export const productos: Producto[] = [
     nombre: "Debut 3.0 DB63",
     marca: "ELAC",
     categoria: "Parlantes",
-    precio: "USD 849",
+    precio: "USD 899",
     frase: "Parlantes pasivos de estante diseñados por Andrew Jones, referencia en su rango de precio.",
     imagen: "/images/products/parlantes-elac-debut-3-0.png",
     descripcion:
@@ -318,7 +318,7 @@ export const productos: Producto[] = [
     nombre: "Q1 Meta",
     marca: "KEF",
     categoria: "Parlantes",
-    precio: "USD 679",
+    precio: "USD 999",
     frase: "Parlantes de estante con tecnología Uni-Q y absorción Meta de segunda generación.",
     imagen: "/images/products/parlantes-kef-q1-meta.png",
     descripcion:
@@ -347,7 +347,7 @@ export const productos: Producto[] = [
     nombre: "RT85",
     marca: "Fluance",
     categoria: "Tocadiscos",
-    precio: "USD 899",
+    precio: "USD 950",
     frase: "Tocadiscos de referencia con cápsula Ortofon 2M Blue y plato acrílico.",
     imagen: "/images/products/tocadiscos-fluance-rt85.png",
     descripcion:
@@ -374,7 +374,7 @@ export const productos: Producto[] = [
     nombre: "Debut EVO 2",
     marca: "Pro-Ject",
     categoria: "Tocadiscos",
-    precio: "USD 1.229",
+    precio: "USD 1.400",
     frase: "El tocadiscos europeo de referencia, rediseñado con brazo de aluminio de 8.6\".",
     imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2.png",
     descripcion:
@@ -509,7 +509,7 @@ export const productos: Producto[] = [
     nombre: "Brio",
     marca: "Rega",
     categoria: "Amplificadores",
-    precio: "USD —",
+    precio: "USD 1.419",
     frase: "Amplificador integrado británico con etapa phono MM de alta calidad.",
     imagen: "/images/products/amplificador-rega-brio.png",
     descripcion:
@@ -535,7 +535,7 @@ export const productos: Producto[] = [
     nombre: "AXA35",
     marca: "Cambridge Audio",
     categoria: "Amplificadores",
-    precio: "USD —",
+    precio: "USD 839",
     frase: "Amplificador integrado compacto con phono MM y cinco entradas analógicas.",
     imagen: "/images/products/amplificador-cambridge-axa35.png",
     descripcion:
@@ -561,7 +561,7 @@ export const productos: Producto[] = [
     nombre: "Model 60n",
     marca: "Marantz",
     categoria: "Amplificadores",
-    precio: "USD —",
+    precio: "USD 2.400",
     frase: "Receiver integrado con streaming HEOS, AirPlay 2 y 60W por canal.",
     imagen: "/images/products/amplificador-marantz-model-60n.png",
     descripcion:
@@ -587,7 +587,7 @@ export const productos: Producto[] = [
     nombre: "C 700 V2",
     marca: "NAD",
     categoria: "Amplificadores",
-    precio: "USD —",
+    precio: "USD 2.679",
     frase: "Amplificador streaming con BluOS, Dirac Live y 80W por canal.",
     imagen: "/images/products/amplificador-nad-c700-v2.png",
     descripcion:
@@ -615,7 +615,7 @@ export const productos: Producto[] = [
     nombre: "CD6007",
     marca: "Marantz",
     categoria: "Streamers",
-    precio: "USD —",
+    precio: "USD 1.150",
     frase: "Reproductor de CD con DAC de alta resolución y salida digital.",
     imagen: "/images/products/streamer-marantz-cd6007.png",
     descripcion:
@@ -641,7 +641,7 @@ export const productos: Producto[] = [
     nombre: "Play CD Edition",
     marca: "Eversolo",
     categoria: "Streamers",
-    precio: "USD —",
+    precio: "USD 1.250",
     frase: "Streamer con lector de CD integrado, pantalla táctil y DAC ESS.",
     imagen: "/images/products/streamer-eversolo-play-cd.png",
     descripcion:
@@ -669,7 +669,7 @@ export const productos: Producto[] = [
     nombre: "Super Denton",
     marca: "Wharfedale",
     categoria: "Parlantes",
-    precio: "USD —",
+    precio: "USD 2.520",
     frase: "Parlante de estante de herencia británica con woofer de lana y tweeter de seda.",
     imagen: "/images/products/parlantes-wharfedale-super-denton.png",
     descripcion:
@@ -695,7 +695,7 @@ export const productos: Producto[] = [
     nombre: "L/R S",
     marca: "Cambridge Audio",
     categoria: "Parlantes",
-    precio: "USD —",
+    precio: "USD 1.150",
     frase: "Parlantes de estante compactos con sonido Cambridge de referencia.",
     imagen: "/images/products/parlantes-cambridge-audio-lrs.png",
     descripcion:
@@ -717,7 +717,7 @@ export const productos: Producto[] = [
     nombre: "LS50 Meta",
     marca: "KEF",
     categoria: "Parlantes",
-    precio: "USD —",
+    precio: "USD 2.759",
     frase: "El monitor de referencia de KEF con Uni-Q y tecnología Meta de absorción.",
     imagen: "/images/products/parlantes-kef-ls50-meta.png",
     descripcion:
@@ -744,7 +744,7 @@ export const productos: Producto[] = [
     nombre: "Q3 Meta",
     marca: "KEF",
     categoria: "Parlantes",
-    precio: "USD —",
+    precio: "USD 1.600",
     frase: "Parlante de estante Uni-Q con tecnología Meta: más grave y más escena que el Q1.",
     imagen: "/images/products/parlantes-kef-q3-meta.png",
     descripcion:
@@ -771,7 +771,7 @@ export const productos: Producto[] = [
     nombre: "Debut 3.0 DF63",
     marca: "ELAC",
     categoria: "Parlantes",
-    precio: "USD —",
+    precio: "USD 2.300",
     frase: "Torre de piso de la serie Debut 3.0: el ELAC DB63 en formato floorstanding.",
     imagen: "/images/products/parlantes-elac-debut-3-0-df63.png",
     descripcion:
@@ -799,7 +799,7 @@ export const productos: Producto[] = [
     nombre: "T1 Evo Phono",
     marca: "Pro-Ject",
     categoria: "Tocadiscos",
-    precio: "USD —",
+    precio: "USD 1.350",
     frase: "Tocadiscos de entrada con preamplificador phono integrado y diseño minimalista.",
     imagen: "/images/products/tocadiscos-pro-ject-t1-evo-phono.png",
     descripcion:
@@ -826,7 +826,7 @@ export const productos: Producto[] = [
     nombre: "AT-LP120XUSB",
     marca: "Audio-Technica",
     categoria: "Tocadiscos",
-    precio: "USD —",
+    precio: "USD 690",
     frase: "Tocadiscos de accionamiento directo con USB, fono incorporado y tres velocidades.",
     imagen: "/images/products/tocadiscos-audio-technica-at-lp120xusb.png",
     descripcion:
