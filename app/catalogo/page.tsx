@@ -7,26 +7,33 @@ import { Package, Search } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ProductoCard } from "@/components/catalogo/ProductoCard"
-import { FiltroCategoria, CATEGORIAS } from "@/components/catalogo/FiltroCategoria"
+import { FiltroCategoria, CATEGORIAS, FILTRO_DESTACADOS } from "@/components/catalogo/FiltroCategoria"
 import { productos } from "@/data/productos"
 
 function CatalogoContent() {
   const searchParams = useSearchParams()
   const [categoriaActiva, setCategoriaActiva] = useState(() => {
     const cat = searchParams.get("categoria")
-    return cat && (CATEGORIAS as readonly string[]).includes(cat) ? cat : "Todos"
+    const validCats = [...(CATEGORIAS as readonly string[]), FILTRO_DESTACADOS]
+    return cat && validCats.includes(cat) ? cat : "Todos"
   })
   const [query, setQuery] = useState("")
 
   useEffect(() => {
     const cat = searchParams.get("categoria")
-    if (cat && (CATEGORIAS as readonly string[]).includes(cat)) {
+    const validCats = [...(CATEGORIAS as readonly string[]), FILTRO_DESTACADOS]
+    if (cat && validCats.includes(cat)) {
       setCategoriaActiva(cat)
     }
   }, [searchParams])
 
   const productosFiltrados = productos.filter((p) => {
-    const matchesCategoria = categoriaActiva === "Todos" || p.categoria === categoriaActiva
+    const matchesCategoria =
+      categoriaActiva === "Todos"
+        ? true
+        : categoriaActiva === FILTRO_DESTACADOS
+        ? p.destacado === true
+        : p.categoria === categoriaActiva
     const q = query.trim().toLowerCase()
     const matchesQuery =
       q === "" ||

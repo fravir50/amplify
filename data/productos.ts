@@ -27,6 +27,7 @@ export interface Producto {
   encajaCon: string[]
   badge: string
   colores: ColorVariante[]
+  destacado?: boolean
 }
 
 export const WHATSAPP_NUMBER = "5491136228970"
@@ -143,6 +144,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["music-hall-mmf-1-3"],
     badge: "Entrega inmediata",
+    destacado: true,
     colores: [{ nombre: "Space Grey", hex: "#5A5F6E" }],
   },
   {
@@ -254,6 +256,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Entrega inmediata",
+    destacado: true,
     colores: [{ nombre: "Black", hex: "#1A1A1A" }],
   },
 
@@ -310,6 +313,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "wiim-amp-ultra", "denon-pma-600ne"],
     badge: "Próximamente",
+    destacado: true,
     colores: [{ nombre: "Walnut", hex: "#8B5E3C" }],
   },
 
@@ -367,6 +371,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
     badge: "Próximamente",
+    destacado: true,
     colores: [{ nombre: "Walnut", hex: "#8B5E3C" }],
   },
   {
@@ -394,6 +399,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35", "denon-pma-600ne"],
     badge: "Próximamente",
+    destacado: true,
     colores: [
       { nombre: "Satin Black", hex: "#2D2D2D" },
       { nombre: "Satin Red", hex: "#410713", imagen: "/images/products/tocadiscos-pro-ject-debut-evo-2-red.png" },
@@ -580,6 +586,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
   {
@@ -660,6 +667,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
 
@@ -710,6 +718,7 @@ export const productos: Producto[] = [
     },
     encajaCon: ["cambridge-audio-axa35"],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
   {
@@ -737,6 +746,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
   {
@@ -764,6 +774,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
   {
@@ -790,6 +801,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
 
@@ -819,6 +831,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
   {
@@ -845,6 +858,7 @@ export const productos: Producto[] = [
     },
     encajaCon: [],
     badge: "Próximamente",
+    destacado: true,
     colores: [],
   },
 ]
