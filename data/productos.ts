@@ -357,7 +357,7 @@ export const productos: Producto[] = [
     nombre: "Amp Ultra + MMF-1.3",
     marca: "WiiM + Music Hall",
     categoria: "Combos",
-    precio: "USD 1.349",
+    precio: "USD 1.549,99",
     frase: "Sistema completo: streaming, amplificación y vinilo en un solo combo.",
     imagen: "/images/products/amplificador-wiim-amp-ultra.png",
     descripcion:
@@ -383,7 +383,7 @@ export const productos: Producto[] = [
     nombre: "PMA-600NE + MMF-1.3",
     marca: "Denon + Music Hall",
     categoria: "Combos",
-    precio: "USD 1.369",
+    precio: "USD 1.599,99",
     frase: "Amplificación japonesa de calidad y vinilo analógico en un combo.",
     imagen: "/images/products/amplificador-denon-pma-600ne.png",
     descripcion:
