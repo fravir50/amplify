@@ -543,7 +543,7 @@ export const productos: Producto[] = [
     nombre: "Play CD Edition",
     marca: "Eversolo",
     categoria: "Streamers",
-    precio: "USD 1.250",
+    precio: "USD 1.189",
     frase: "Streamer con lector de CD integrado, pantalla táctil y DAC ESS.",
     imagen: "/images/products/streamer-eversolo-play-cd.png",
     descripcion:
