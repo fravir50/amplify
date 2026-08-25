@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { CartProvider } from "@/components/lifestyle/cart-provider"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -15,45 +16,32 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Amplify",
+  title: "amplify — Bose, Denon Home y hi-fi en Argentina",
   description:
-    "Acceso a equipos de audio premium que no podés conseguir en Argentina. Catálogo global, valores internacionales y una comunidad apasionada por el buen sonido.",
+    "Plug-and-play en pesos: Bose, Denon Home y Sonos, con stock y cuotas. El catálogo hi-fi sigue en USD, por WhatsApp.",
   icons: {
     icon: [
       { url: "/favicon-amplify.png", type: "image/png" },
       { url: "/icon.png", type: "image/png" },
     ],
-    apple: [
-      { url: "/apple-icon.png", type: "image/png", sizes: "180x180" },
-    ],
-    shortcut: [
-      { url: "/favicon-amplify.png" },
-    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
+    shortcut: [{ url: "/favicon-amplify.png" }],
   },
   openGraph: {
-    title: "Amplify",
+    title: "amplify",
     description:
-      "Acceso a equipos de audio premium que no podés conseguir en Argentina. Catálogo global, valores internacionales y una comunidad apasionada por el buen sonido.",
-    siteName: "Amplify",
+      "Especialistas en Bose y plug-and-play, con oído hi-fi. Precios en pesos, cuotas, stock a la vista.",
+    siteName: "amplify",
     locale: "es_AR",
     type: "website",
-    images: [
-      {
-        url: "/apple-icon.png",
-        width: 1200,
-        height: 1200,
-        alt: "Amplify",
-      },
-    ],
+    images: [{ url: "/apple-icon.png", width: 1200, height: 1200, alt: "amplify" }],
   },
   twitter: {
     card: "summary",
-    title: "Amplify",
-    description:
-      "Acceso a equipos de audio premium que no podés conseguir en Argentina.",
+    title: "amplify",
+    description: "Bose y plug-and-play en Argentina. Con oído hi-fi.",
     images: ["/apple-icon.png"],
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -64,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-        {children}
+        <CartProvider>{children}</CartProvider>
         <Analytics />
       </body>
     </html>

@@ -46,16 +46,28 @@ function CatalogoContent() {
     <div className="px-4 sm:px-6 lg:px-8 pt-32 pb-20">
       <div className="mx-auto max-w-7xl">
 
+        <div className="mb-8 rounded-2xl border border-white/8 bg-[#0f0f0f] p-5 sm:flex sm:items-center sm:justify-between">
+          <p className="text-sm text-white/55">
+            Estás en el catálogo hi-fi (USD, WhatsApp). Bose, Denon Home y el carrito en pesos viven en la tienda lifestyle.
+          </p>
+          <Link
+            href="/tienda"
+            className="mt-3 inline-block flex-shrink-0 rounded-full border border-[#FF6B35]/40 px-4 py-2 text-sm text-[#FF6B35] sm:mt-0"
+          >
+            Ir a la tienda
+          </Link>
+        </div>
+
         {/* Header */}
         <div className="mb-10">
           <h1
             className="font-semibold text-white mb-3"
             style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
           >
-            Catálogo
+            Catálogo Hi-Fi
           </h1>
           <p className="text-white/50" style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}>
-            Consultar disponibilidad para cada producto.
+            Separados, bandejas, DACs y parlantes. Precios en USD. Cierre por WhatsApp.
           </p>
         </div>
 

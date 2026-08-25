@@ -91,7 +91,7 @@ const faqData: FAQCategory[] = [
       },
       {
         question: "¿Hacen envíos?",
-        answer: "Por el momento no realizamos envíos. Solo ofrecemos retiros en Nuñez o Palermo, CABA.",
+        answer: "Sí. Política única: retiro sin cargo en Núñez o Palermo, envío a CABA y GBA (24–48 hs) y envío al interior (3–7 días hábiles). El detalle de costo está en el checkout de la tienda lifestyle; en hi-fi lo coordinamos por WhatsApp.",
       },
     ],
   },
