@@ -1,24 +1,34 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist } from "next/font/google"
+import { Lora } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { CartProvider } from "@/components/lifestyle/cart-provider"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+})
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+})
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#000000",
+  themeColor: "#F7F4EF",
 }
 
 export const metadata: Metadata = {
-  title: "amplify — Bose, Denon Home y hi-fi en Argentina",
+  title: "Amplify — Audio para el hogar en Argentina",
   description:
-    "Plug-and-play en pesos: Bose, Denon Home y Sonos, con stock y cuotas. El catálogo hi-fi sigue en USD, por WhatsApp.",
+    "Sonos, Bose, Denon y más. Stock real, precios en USD, criterio publicado. Retiro en Núñez o Palermo.",
   icons: {
     icon: [
       { url: "/favicon-amplify.png", type: "image/png" },
@@ -28,30 +38,28 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon-amplify.png" }],
   },
   openGraph: {
-    title: "amplify",
+    title: "Amplify — Audio para el hogar en Argentina",
     description:
-      "Especialistas en Bose y plug-and-play, con oído hi-fi. Precios en pesos, cuotas, stock a la vista.",
-    siteName: "amplify",
+      "Sonos, Bose, Denon y más. Stock real, precios en USD, criterio publicado.",
+    siteName: "Amplify",
     locale: "es_AR",
     type: "website",
-    images: [{ url: "/apple-icon.png", width: 1200, height: 1200, alt: "amplify" }],
+    images: [{ url: "/apple-icon.png", width: 1200, height: 1200, alt: "Amplify" }],
   },
   twitter: {
     card: "summary",
-    title: "amplify",
-    description: "Bose y plug-and-play en Argentina. Con oído hi-fi.",
+    title: "Amplify",
+    description: "Audio para el hogar. Stock real, criterio publicado.",
     images: ["/apple-icon.png"],
   },
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={`font-sans antialiased`}>
+    <html lang="es" className={`${geist.variable} ${lora.variable}`} suppressHydrationWarning>
+      <body className="font-sans antialiased">
         <CartProvider>{children}</CartProvider>
         <Analytics />
       </body>

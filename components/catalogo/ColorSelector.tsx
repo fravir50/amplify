@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import type { ColorVariante } from "@/data/productos"
+import type { ColorVariante } from "@/data/legacy-hifi"
 
 interface Props {
   colores: ColorVariante[]

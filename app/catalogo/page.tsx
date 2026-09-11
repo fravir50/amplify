@@ -8,7 +8,7 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ProductoCard } from "@/components/catalogo/ProductoCard"
 import { FiltroCategoria, CATEGORIAS, FILTRO_DESTACADOS } from "@/components/catalogo/FiltroCategoria"
-import { productos } from "@/data/productos"
+import { productosHifi as productos } from "@/data/legacy-hifi"
 
 function CatalogoContent() {
   const searchParams = useSearchParams()
