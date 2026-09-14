@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import type { ColorVariante } from "@/data/productos"
+import type { ColorVariante } from "@/data/legacy-hifi"
 
 interface Props {
   imagenBase: string

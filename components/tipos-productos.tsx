@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { AnimateOnScroll } from "./animate-on-scroll"
-import { productos } from "@/data/productos"
+import { productosHifi as productos } from "@/data/legacy-hifi"
 
 const ITEMS_PER_PAGE = 3
 const preview = productos.filter((p) => p.categoria !== "Combos").slice(0, 9)

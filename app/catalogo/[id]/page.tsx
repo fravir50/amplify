@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { productos, WHATSAPP_NUMBER } from "@/data/productos"
+import { productosHifi as productos, WHATSAPP_NUMBER_HIFI as WHATSAPP_NUMBER } from "@/data/legacy-hifi"
 import { ProductoCard } from "@/components/catalogo/ProductoCard"
 import { ProductoHero } from "@/components/catalogo/ProductoHero"
 

@@ -3,11 +3,11 @@
 import Link from "next/link"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import type { Producto } from "@/data/productos"
-import { WHATSAPP_NUMBER } from "@/data/productos"
+import type { ProductoHifi } from "@/data/legacy-hifi"
+import { WHATSAPP_NUMBER_HIFI } from "@/data/legacy-hifi"
 
 interface Props {
-  producto: Producto
+  producto: ProductoHifi
   style?: React.CSSProperties
 }
 
@@ -15,7 +15,7 @@ function buildWhatsAppUrl(nombre: string): string {
   const text = encodeURIComponent(
     `Hola! Me interesa el ${nombre} que vi en la web de Amplify. ¿Podrían darme más info?`
   )
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`
+  return `https://wa.me/${WHATSAPP_NUMBER_HIFI}?text=${text}`
 }
 
 export function ProductoCard({ producto, style }: Props) {
